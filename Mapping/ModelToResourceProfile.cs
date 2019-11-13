@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutomationAPI.Domain.Models;
+using AutomationAPI.Models;
 using AutomationAPI.Resources;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace AutomationAPI.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Category, CategoryResource>();
+            CreateMap<TestSuite, TestSuiteResource>();
         }
     }
 }

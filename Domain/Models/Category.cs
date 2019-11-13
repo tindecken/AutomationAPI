@@ -21,13 +21,6 @@ namespace AutomationAPI.Domain.Models
 
             Name = d.Name;
             TestSuites = lstTestSuite;
-            //List<TestSuite> lstTestSuite = new List<TestSuite>();
-            //foreach (string tsFile in Directory.GetFiles(catFolder))
-            //{
-            //    var tsFilenName = n;
-            //    //TestSuite tempTS = new TestSuite(ts);
-            //    //TestSuites.Add(tempTS);
-            //}
         }
         public List<TestSuite> TestSuites { get; set; }
         public string Name { get; set; }

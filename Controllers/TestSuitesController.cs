@@ -14,43 +14,5 @@ namespace AutomationAPI.Controllers
     [ApiController]
     public class TestSuitesController : ControllerBase
     {
-        // GET: api/TestSuites
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            List<string> lstTestSuite = new List<string>();
-            foreach(string sTestSuite in Directory.GetDirectories(ProjectConstant.sTestPlanFolder))
-            {
-                lstTestSuite.Add(sTestSuite);
-            }
-            return lstTestSuite;
-        }
-
-        //// GET: api/TestSuites/5
-        //[HttpGet("{id}", Name = "Get")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        //// POST: api/TestSuites
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
-
-        //// PUT: api/TestSuites/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE: api/ApiWithActions/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
-
-
     }
 }

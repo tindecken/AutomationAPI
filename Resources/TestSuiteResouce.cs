@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AutomationAPI.Resources
 {
-    public class CategoryResource
+    public class TestSuiteResource
     {
+
         public string Name { get; set; }
 
-        public List<TestSuiteResource> TestSuiteResources { get; set; }
     }
 }
