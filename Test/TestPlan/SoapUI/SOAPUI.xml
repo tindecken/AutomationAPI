@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Client1" Type="Chrome" Address="localhost" Description="" />
+        <Client Name="NonBrowser" Type="None" Address="localhost" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="SOAPUI001" Status="0" Name="Get Token with valid information" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">GetToken</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">001 ValidInformation</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI002" Status="0" Name="Get Token with invalid username" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">GetToken</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">002 Invalid User Name</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI003" Status="0" Name="Get Token with invalid password" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">GetToken</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">003 InvalidPassword555</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI004" Status="0" Name="Get Token with invalid authorization token" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">GetToken</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">004 InvalidAuthorizationToken</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI005" Status="0" Name="Search Operations" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="SOAPUI003">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Search</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">005 SearchOpeartions</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI006" Status="0" Name="List all user with basic user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">006 ListAllUsersWithBasicUser</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI007" Status="0" Name="List all user with admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">007 ListAllUsersWithAdminUser</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI008" Status="0" Name="Create new user with valid information - using admin user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">008 Create new user with valid information using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI009" Status="0" Name="Create new user with valid information - using basic user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">009 Create new user with valid information using basic user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI010" Status="0" Name="Create an user already exitst in the system - using admin user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">010 Create an user already exitst in the system using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI011" Status="0" Name="Create new user with invalid email - null value - using admin user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">011 Create new user with empty email using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI012" Status="0" Name="Create new user with invalid email - empty value - using admin user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">012 Create new user with empty email using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI013" Status="0" Name="Create new user with invalid email - invalid format - using admin user" Description="" Author="HoangNguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">013 Create new user with invalid email invalid format using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI014" Status="0" Name="Create new user with empty roleid - using admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">014 Create new user with empty roleid using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI015" Status="0" Name="Create new user empty first name - using admin user" Description="" Author="Hoang Nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">015 Create new user empty first name using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI016" Status="0" Name="Admin user can update other admin user valid information" Description="" Author="Hoang Nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">016 Admin user can update other admin user valid information</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI017" Status="0" Name="Create new user with blank - using admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">017 Create new user with empty lastname using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI018" Status="0" Name="Create new user with invalid roleid - using admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">018 Create new user with invalid roleid using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI019" Status="0" Name="Get user information with valid userid using admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">019 Get user information with valid userid using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI020" Status="0" Name="Get user information with basic user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">020 Get user information with basic user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI021" Status="0" Name="Get user information with invalid userid - using admin user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">021 Get user information with invalid userid using admin user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI022" Status="0" Name="Basic user can't update other user" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">022 Basic user can not update other user</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI023" Status="0" Name="Admin user update basic user with blank email" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">023 Admin user update basic user with blank email</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI024" Status="0" Name="Admin user update basic user with invalid email format" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">024 Admin user update basic user with invalid email format</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI025" Status="0" Name="Admin user update basic user with blank first name" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">025 Admin user update basic user with blank first name</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI026" Status="0" Name="Admin user update basic user with blank last name" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">026 Admin user update basic user with blank last name</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI027" Status="0" Name="Admin user update basic user with blank roleid" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">027 Admin user update basic user with blank roleid</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI028" Status="0" Name="Admin user update basic user without email field" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">028 Admin user update basic user without email field</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI029" Status="0" Name="Admin user view account info" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">29 Admin user view account info</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI030" Status="0" Name="Basic user view account info" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">30 Basic user view account info</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI031" Status="0" Name="Basic user update account info with valid infomation" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">31 Basic user update account info with valid infomation</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI032" Status="0" Name="Basic user update account info with blank password" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">32 Basic user update account info with blank password</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI033" Status="0" Name="Basic user update account info with password less than 8 characters" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">33 Basic user update account info with password less than 8 characters</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI034" Status="0" Name="Basic user update account info with password not contains number" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">34 Basic user update account info with password not contains number</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI035" Status="0" Name="Basic user update account info with password not contains special character" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">35 Basic user update account info with password not contains special character</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI036" Status="0" Name="Basic user update account info with password not contains upper case character" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">36 Basic user update account info with password not contains upper case character</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI037" Status="0" Name="Basic user update account info with password not contains lower case character" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">37 Basic user update account info with password not contains lower case character</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI038" Status="0" Name="Basic user update account info with blank email" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">38 Basic user update account info with blank email</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI039" Status="0" Name="Basic user update account info with invalid email format" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">39 Basic user update account info with invalid email format</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI040" Status="0" Name="Basic user update account info with valid email" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">40 Basic user update account info with valid email</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI041" Status="0" Name="Basic user update account info blank firstname" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">41 Basic user update account info blank firstname</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI042" Status="0" Name="Basic user update account info blank lastname" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">42 Basic user update account info blank lastname</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI043" Status="0" Name="Basic user update account info blank firstname and blank lastname" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">43 Basic user update account info blank firstname and blank lastname</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI044" Status="0" Name="Response message shoul not include password" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Account</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">44 Response message shoul not include password</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI045" Status="0" Name="Reset password after adding some characters at the end of valid userid" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">User</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">045 Reset password after adding some characters at the end of valid userid</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="NonBrowser" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="" />
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="NonBrowser" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">acomcloud-sa-dev-001.database.windows.net|1433|acom|4dE)(@@@|acme</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">DECLARE @email VARCHAR(255) = 'thaihoang85@ezitsol.com',|@userId uniqueidentifier;|SELECT @userId = UserId FROM Users u WHERE u.Email = @email|UPDATE Transactions|SET LockedByUser = NULL,</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">LockedOnDatetime = NULL|WHERE LockedByUser = @userId|DELETE TransactionTaskParticipants WHERE ParticipantId = @userId|DELETE TransactionTaskParticipantHistory WHERE ParticipantId = @userId</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">DELETE UserGroupHistory WHERE UserId = @userId |DELETE UserGroups WHERE UserId = @userId|DELETE UserHistory WHERE UserId = @userId |DELETE Users WHERE UserId = @userId</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">(1 rows affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI046" Status="0" Name="Create new group with invalid userid" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Group</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">046 Create new group with invalid userid</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI047" Status="0" Name="Create new role with same pageIds field" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">047 Create new role with same pageIds field</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI048" Status="0" Name="Create new role with invalid transactionTypeIds field" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">048 Create new role with invalid transactionTypeIds field</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI049" Status="0" Name="Create new role with invalid pageIds field" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">049 Create new role with invalid pageIds field</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI050" Status="0" Name="Basic user can not get all roles in the system" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">50 Basic user can not get all roles in the system</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI051" Status="0" Name="Admin user get all roles in the system" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">50 Basic user can not get all roles in the system</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI052" Status="0" Name="Basic user can not create new role" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">52 Basic user can not create new role</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI053" Status="0" Name="Admin user create new role with blank pageIds" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">52 Basic user can not create new role</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI054" Status="0" Name="Admin user create new role with blank transactionTypeIds" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">54 Admin user create new role with blank transactionTypeIds</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI055" Status="0" Name="Admin user create new role with same transactionTypeIds" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">55 Admin user create new role with same transactionTypeIds</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI056" Status="0" Name="Admin user create new role with blank role name" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">56 Admin user create new role with blank role name</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI057" Status="0" Name="Admin user create new role with already exists role name" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">57 Admin user create new role with already exists role name</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI058" Status="0" Name="Admin user create new role with blank roleid" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">58 Admin user create new role with blank roleid</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI059" Status="0" Name="Admin user create new role with already exists roleid" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">59 Admin user create new role with already exists roleid</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="SOAPUI060" Status="0" Name="Admin user create new role with blank description" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="RunSoapUICommand" Status="" Remote="NonBrowser" Product="WinApp" Feature="SoapUI" StartTime="" FinishTime="" Description="Use command line to run SoapUI test case - Before running this KW - you need install SOAPUI and set environment path as http://imgur.com/jYq02l6" Comment="">
+                <Param Name="sProjectXMLFilePath" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ProjectFile']" Description="the SOAPUI .xml file - it include test suite and test case ">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Test-soapui-project.xml</Param>
+                <Param Name="sTestSuite" TestBedPath="" Description="Test suite name in the Project file">Role</Param>
+                <Param Name="sTestCase" TestBedPath="" Description="Test case name need to run from test suite">60 Admin user create new role with blank description</Param>
+                <Param Name="sResultFolder" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SOAPUI']/Node[@Name='ResultFolder']" Description="All result files of SOAPUI running will put in this folder">E:\\HoangNguyen\\automationtest\\APOutSource\\AutoTest\\TestData\\SoapUI\\Results</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional">null</Param>
+            </Keyword>
+        </TestCase>
+    </Tests>
+</TestSuite>

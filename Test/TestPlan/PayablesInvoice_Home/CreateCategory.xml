@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="TCAP01_000" vstsID="" Status="0" Name="Create Category Happy Case" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://xampleqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">thuy.dao@ezitsol.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="CreateNewCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Create new Category((Images\Customer\PayablesInvoices\10.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to create">sCategoryName</Param>
+                <Param Name="sIsAddResults" TestBedPath="" Description="If you want to add transitions to Category then set it true ,otherwise is false or null">true</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue1" TestBedPath="" Description="Value Input Field 1, If ít's DateTime should be in format MM/dd/yyyy">DU_VenID_PI_A_C_01</Param>
+                <Param Name="sValue2" TestBedPath="" Description="Some Field we need to have value Input Field 2, If ít's DateTime should be in format MM/dd/yyyy">null</Param>
+                <Param Name="sIsCreated" TestBedPath="" Description="If true then click on Create button, false for Cancel, null for Validate Require Message">true</Param>
+                <Param Name="sIsExpectedFailed" TestBedPath="" Description="If you want to verify negative case, expected message should return then set sIsExpectedFailed is true, If sIsExpectedFailed is true then sIsCreated need to set to null, default is false">false</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TCAP01_001" vstsID="" Status="0" Name="Create Category Validate Missing Fields" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://xampleqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">thuy.dao@ezitsol.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="CreateNewCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Create new Category((Images\Customer\PayablesInvoices\10.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to create" />
+                <Param Name="sIsAddResults" TestBedPath="" Description="If you want to add transitions to Category then set it true ,otherwise is false or null">true</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue1" TestBedPath="" Description="Value Input Field 1, If ít's DateTime should be in format MM/dd/yyyy" />
+                <Param Name="sValue2" TestBedPath="" Description="Some Field we need to have value Input Field 2, If ít's DateTime should be in format MM/dd/yyyy">null</Param>
+                <Param Name="sIsCreated" TestBedPath="" Description="If true then click on Create button, false for Cancel, null for Validate Require Message">null</Param>
+                <Param Name="sIsExpectedFailed" TestBedPath="" Description="If you want to verify negative case, expected message should return then set sIsExpectedFailed is true, If sIsExpectedFailed is true then sIsCreated need to set to null, default is false">true</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

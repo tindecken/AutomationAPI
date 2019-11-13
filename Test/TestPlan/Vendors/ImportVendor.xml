@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="New_TCVD001" vstsID="" Status="0" Name="Precondition" Description="" Author="thanh.huynh" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='CustomerName1']" Description="Variable 9">autoqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Create Default Term Code value is 2</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateCustomerTerms.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#TermsID#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">2</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateCustomerTermsTemp01.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteVendor480-Payment.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#VendorName#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">THD</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteVendor480-PaymentTemp01.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Replace SQL file in order to Delete user</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteUser_Customersite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteUser_Customersite.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteUser_AdminSite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteUser_AdminSite01.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteAdminUser_Customersite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteAdminUser_CustomersiteTemp01.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Create new user with password: Admin@123</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateCustomerUser.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#email#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateCustomerUserTemp1.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateAdminUser.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#email#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateAdminUserTemp1.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateAdminUserTemp1.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">(select NEWID())</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">'49218715-1420-43F6-97B0-4610FBB73068'</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateAdminUserTemp02.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateAdminUser_CustomerSite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#email#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateAdminUser_CustomerSiteTemp1.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateAdminUser_CustomerSiteTemp1.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">(select NEWID())</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">'49218715-1420-43F6-97B0-4610FBB73068'</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateAdminUser_CustomerSiteTemp02.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="TCIM" vstsID="23873" Status="0" Name="Import Vendor on Customer Site" Description="" Author="Nguyen.Nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteUser_Customersite.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringAdminDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteUser_AdminSite01.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringAdminDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteAdminUser_CustomersiteTemp01.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\SQLScripts\\CreateCustomerUserTemp1.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringAdminDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\SQLScripts\\CreateAdminUserTemp02.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringAdminDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\SQLScripts\\CreateAdminUser_CustomerSiteTemp02.sql)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://autoqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Login to AP outsource web page" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="User Name">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete Multy Vendors</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteVendor480-PaymentTemp01.sql)</Param>
+            </Keyword>
+            <Keyword Name="GoToHomePage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page Home - Go To Home Page" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Master Data - Go To Vendors" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Vendors Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">1. Import Vendor</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumns\\allcols_eachfieldvalue_woGL.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">allcols_eachfieldvalue_woGL.csv\n95 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateVendorInformationDataFile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Vendor Information Data File, this kw will verify general vendor information (Images\Customer\Vendor\12.PNG)" Comment="no">
+                <Param Name="sDataDrivenFile" TestBedPath="" Description="sDataDrivenFile">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumnsValidate\\Allcols_eachfieldvalue_woGL_Validate.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumns\\allcols_eachfieldvalue_woGL_empty_value.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">allcols_eachfieldvalue_woGL_empty_value.csv\n0 NEW VENDOR(S) WERE CREATED\n20 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateVendorInformationDataFile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Vendor Information Data File, this kw will verify general vendor information (Images\Customer\Vendor\12.PNG)" Comment="no">
+                <Param Name="sDataDrivenFile" TestBedPath="" Description="sDataDrivenFile">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumnsValidate\\allcols_eachfieldvalue_woGL_empty_value_Validate.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumns\\allcols_specialchars.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">allcols_specialchars.csv\n32 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateVendorInformationDataFile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Vendor Information Data File, this kw will verify general vendor information (Images\Customer\Vendor\12.PNG)" Comment="no">
+                <Param Name="sDataDrivenFile" TestBedPath="" Description="sDataDrivenFile">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumnsValidate\\allcols_specialchars_Validate.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">2. Import Vendor Invalid Empty Vendor ID</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\AllColumns\\emptyVendorIdInvalid.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">fail</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">Line No 2: VendorId is required.</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">3. Import Vendor Check Maxlength</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\AutoTrim_MaxLength\\0_maxlength.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">fail</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">Line No. 4 GL Account Code \"THD_DefaultAccountsPayableGLAccountId _ 50 THD_De_\" is not existing</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateVendorInformationDataFile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Vendor Information Data File, this kw will verify general vendor information (Images\Customer\Vendor\12.PNG)" Comment="no">
+                <Param Name="sDataDrivenFile" TestBedPath="" Description="sDataDrivenFile">Files\\DataDriven\\Vendor\\ImportVendor\\AutoTrim_MaxLengthValidate\\0_maxlengthValidate.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">4. Import Vendor Specific Column</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ExpectedMessageImportFormat</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">8</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Line No 2: VendorEnrollmentCallBackDate contains an invalid value 'ABC' and should be a valid date value with format 'yyyy-MM-dd'.\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Line No 2: StandardIndustrialClassificationCode contains an invalid value 'A' which should be a numeric value.\n</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">Line No 2: EstimatedAnnualSpend contains an invalid value 'A' which should be a possible decimal value.\n</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">Line No 2: EnabledCheckLocalPrint contains an invalid value 'A' and must be equal to either '0' or '1'.\n</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">Line No 2: HoldStatus contains an invalid value 'A' and must be equal to either '0'(Not On Hold) or '1'(On Hold).\n</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">Line No 2: Is1099 contains an invalid value 'A' and must be equal to either '0'(Not 1099 Vendor) or '1'(Yes, 1099 Vendor).\n</Param>
+                <Param Name="sVar7" TestBedPath="" Description="Variable 7">Line No 2: Status contains an invalid value 'A' and must be equal to either '1'(Active) or '2'(Inactive) or '3'(Temporary).\n</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">Line No 3: VendorEnrollmentCallBackDate contains an invalid value '999999-66-55' and should be a valid date value with format 'yyyy-MM-dd'.\n</Param>
+                <Param Name="sVar9" TestBedPath="" Description="Variable 9" />
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\EmptyVendor.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">EmptyVendor.csv\n1 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\EmptyVendor_Duplicate.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">fail</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">Line No 2: 'THD_VendorIdonly' is a duplicate each VendorId: 'THD_VendorIdonly' (case-insensitive).</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\FormatNumbDate.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">fail</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">@ExpectedMessageImportFormat@</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\RequiredFields.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">RequiredFields.csv\n1 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\VednorIdOnly.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">VednorIdOnly.csv\n0 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Start Over</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ClickOnCancelButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="ClickOnCancelButton" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="CustomerUploadVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Customer Upload Vendor" Comment="no">
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sVendorFilePath" TestBedPath="" Description="Vendor file path need to upload">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumns\\VerifyDataIsRequired.csv</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">VerifyDataIsRequired.csv\n0 NEW VENDOR(S) WERE CREATED\n0 VENDOR(S) WERE UPDATED</Param>
+                <Param Name="sClickButton" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">Start Over</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ClickOnCancelButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="ClickOnCancelButton" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateVendorInformationDataFile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Vendor Information Data File, this kw will verify general vendor information (Images\Customer\Vendor\12.PNG)" Comment="no">
+                <Param Name="sDataDrivenFile" TestBedPath="" Description="sDataDrivenFile">Files\\DataDriven\\Vendor\\ImportVendor\\SpecificColumnsValidate\\EmptyAndRequireValidate.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

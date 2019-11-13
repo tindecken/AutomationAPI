@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome2" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+        <Client Name="IE11" Type="Internet Explorer" Address="" Description="" />
+        <Client Name="Edge" Type="Edge" Address="" Description="" />
+        <Client Name="NoxPlayer" Type="Appium" Address="127.0.0.1:62001" Description="" />
+        <Client Name="Nexus6" Type="Appium" Address="ZX1G22G8G6" Description="" />
+        <Client Name="Nexus6Wifi" Type="Appium" Address="10.1.1.117:5555" Description="" />
+        <Client Name="Chrome3" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome1" Type="Chrome" Address="" Description="" />
+        <Client Name="AzureStorage" Type="Electron" Address="C:\Program Files (x86)\Microsoft Azure Storage Explorer\StorageExplorer.exe" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="Test00" vstsID="" Status="0" Name="Just A login case" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours">CurrentDateMinusHours(12)</Param>
+                <Param Name="sFormat" TestBedPath="" Description="format of date">d/M/yyyy</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome2" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+        <Client Name="IE11" Type="Internet Explorer" Address="" Description="" />
+        <Client Name="Edge" Type="Edge" Address="" Description="" />
+        <Client Name="NoxPlayer" Type="Appium" Address="127.0.0.1:62001" Description="" />
+        <Client Name="Nexus6" Type="Appium" Address="ZX1G22G8G6" Description="" />
+        <Client Name="Nexus6Wifi" Type="Appium" Address="10.1.1.117:5555" Description="" />
+        <Client Name="Chrome3" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome1" Type="Chrome" Address="" Description="" />
+        <Client Name="AzureStorage" Type="Electron" Address="C:\Program Files (x86)\Microsoft Azure Storage Explorer\StorageExplorer.exe" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="Test00" vstsID="" Status="0" Name="Just A login case" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="" Description="URL will be open">https://admindev.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">thuy.dao@ezitsol.com</Param>
+                <Param Name="sPassword" TestBedPath="" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Admin_GoToVendorEnrollmentsPage" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Go To Vendor Enrollments Page" Comment="" />
+            <Keyword Name="VendorEnrollments_SelectCustomerSiteAndCategory" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Vendor Enrollments page - select a Customer site than select a Category" Comment="">
+                <Param Name="sSiteName" TestBedPath="" Description="provide the Customer site or Customer Name to select">enrollment</Param>
+                <Param Name="sCategory" TestBedPath="" Description="provide the Category name to select">Assigned To Me</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorEnrollment_FilterVendorOnMainPage" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Vendor Enrollments page - Filter Vendor" Comment="">
+                <Param Name="sFilter" TestBedPath="" Description="filter meta data: sField1;sOperator1;sValue1|sField2;sOperator2;sValue2">Vendor Name;Equal;Test Vendor 17</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorEnrollment_OpenVendorProfile" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Vendor Enrollments page - Select to View an item from Vendor Enrollment list" Comment="">
+                <Param Name="sItemIndex" TestBedPath="" Description="Select a vendor by index - count from 1, will ignore sVendorId and sVendorName input values if not null">null</Param>
+                <Param Name="sVendorId" TestBedPath="" Description="Select by vendor ID">null</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="Select by Vendor Name, first matched">Test Vendor 17</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_EditCommonInfo" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Edit Common Information of Vendor Profile (Images\AdminDev\EnrollmentServices\EditCommonInfoVendorProfile.png)" Comment="yes">
+                <Param Name="sEstimatedAnnualPendAmount" TestBedPath="" Description="Estimated Annual Pend Amount">2000</Param>
+                <Param Name="sTaxID" TestBedPath="" Description="TaxID">123456789</Param>
+                <Param Name="sAccountNumber" TestBedPath="" Description="Account Number">2342321312</Param>
+                <Param Name="sTargetedForEnrollment" TestBedPath="" Description="Targeted For Enrollment">NO</Param>
+                <Param Name="sContactStatus" TestBedPath="" Description="Contact Status">Call Back;05/15/2029</Param>
+                <Param Name="sRestricted" TestBedPath="" Description="Restricted">YES</Param>
+                <Param Name="sEnrollmentCategory" TestBedPath="" Description="Enrollment Category">Other</Param>
+                <Param Name="sOwner" TestBedPath="" Description="Owner">Thuy Dao Ezitsol</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_UnEnrollACH" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Unenroll ACH (Images\AdminDev\EnrollmentServices\VendorProfile_UnEnrollACH.png)" Comment="yes">
+                <Param Name="sReason" TestBedPath="" Description="Reason to unenroll ACH, can't be null or empty">Fees Too High</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_EnrollACH" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Enroll ACH (Images\AdminDev\EnrollmentServices\VendorProfile_EnrollACH.png)" Comment="yes">
+                <Param Name="sBankName" TestBedPath="" Description="Bank Name, can't be null or empty">HO_Bank_ACHEnroll</Param>
+                <Param Name="sAlternatePayToName" TestBedPath="" Description="Alternate Pay To Name">HO_Alternate Bank To Name</Param>
+                <Param Name="sBankAccountNumber" TestBedPath="" Description="Bank Account Number, can't be null">1234566789</Param>
+                <Param Name="sBankAccountNumberConfirm" TestBedPath="" Description="Confirm Bank Account Number, can't be null">1234566789</Param>
+                <Param Name="sBankRoutingNumber" TestBedPath="" Description="Bank Routing Number, can't be null">987654321</Param>
+                <Param Name="sBankRoutingNumberConfirm" TestBedPath="" Description="Confirm Bank Routing Number, can't be null">987654321</Param>
+                <Param Name="sBankAccountType" TestBedPath="" Description="Bank Account Type">SAVING</Param>
+                <Param Name="sAuthorizationFile" TestBedPath="" Description="Path to PDF file need to upload, can't be null">Files\\file.pdf</Param>
+                <Param Name="sEmailRemittance" TestBedPath="" Description="Check or Uncheck on Email Remittance">Check</Param>
+                <Param Name="sCampaignSource" TestBedPath="" Description="Select Campaign Source">Automated E-mail</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_EditEnrollACH" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Edit Enroll ACH (Images\AdminDev\EnrollmentServices\VendorProfile_EditEnrollACH.png)" Comment="yes">
+                <Param Name="sBankName" TestBedPath="" Description="Bank Name, can't be null or empty">HO_Bank_ACHEnroll</Param>
+                <Param Name="sAlternatePayToName" TestBedPath="" Description="Alternate Pay To Name">HO_Alternate Bank To Namee</Param>
+                <Param Name="sBankAccountNumber" TestBedPath="" Description="Bank Account Number, can't be null">12345667890</Param>
+                <Param Name="sBankAccountNumberConfirm" TestBedPath="" Description="Confirm Bank Account Number, can't be null">12345667890</Param>
+                <Param Name="sBankRoutingNumber" TestBedPath="" Description="Bank Routing Number, can't be null">9876543210</Param>
+                <Param Name="sBankRoutingNumberConfirm" TestBedPath="" Description="Confirm Bank Routing Number, can't be null">9876543210</Param>
+                <Param Name="sBankAccountType" TestBedPath="" Description="Bank Account Type">CHECKING</Param>
+                <Param Name="sEmailRemittance" TestBedPath="" Description="Check or Uncheck on Email Remittance">UnCheck</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_AddRecipient" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Edit Enroll ACH make sure there's at least a Recipient is added before by using KW VendorProfile_AddRecipient (Images\AdminDev\EnrollmentServices\VendorProfile_AddRecipient.png)" Comment="">
+                <Param Name="sEmail" TestBedPath="" Description="Email need to add, can't be null">jqcgroup02@acomsolutions.com</Param>
+                <Param Name="sCheck" TestBedPath="" Description="Check or uncheck CHECK on select">uncheck</Param>
+                <Param Name="sACH" TestBedPath="" Description="Check or uncheck ACH on select">uncheck</Param>
+                <Param Name="sVcard" TestBedPath="" Description="Check or uncheck VCARD on select">check</Param>
+                <Param Name="sFlex" TestBedPath="" Description="Check or uncheck FLEX on select">check</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+        </TestCase>
+    </Tests>
+</TestSuite>

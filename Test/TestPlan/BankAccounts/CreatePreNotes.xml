@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="TC_PNT001_001" vstsID="" Status="0" Name=" Icon is hidden" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesIcon" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Icon for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="" Description="Bank Account Name need to Create PreNote">PSO10191337__33</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Create PreNote success or not">unsuccess</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT001_002" vstsID="" Status="0" Name=" Icon is displayed" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesIcon" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Icon for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Create PreNote success or not">success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT002_001" vstsID="" Status="0" Name="Verify PreNotes Details List" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">UPDATE VendorAddresses SET PreNoteGeneratedUser = NULL, PreNoteGeneratedDatetime = NULL WHERE VendorAddresses.VendorKey LIKE 'NB_03PrNt%' AND VendorAddresses.RoutingNumber IS NOT NULL AND VendorAddresses.BankAccountNumber IS NOT NULL</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11;NB 03 Pre-Note ACH11 Both.;ACH11-Main ; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB 03 Pre-Note ACH11 Both.; ACH11-Remit; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH22; NB 03 Pre-Note ACH22 Main. ;ACH22-Main; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH33 ;NB 03 Pre-Note ACH33 Remit.; ACH33-Remit; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH44 ; NB 03 Pre-Note ACH44 None; ACH44-ACH; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT003_001" vstsID="" Status="0" Name="Search Vendor with value is 'ecking'" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11;NB 03 Pre-Note ACH11 Both.;ACH11-Main ; ecking; 4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH22; NB 03 Pre-Note ACH22 Main. ;ACH22-Main; ecking; 4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH33 ;NB 03 Pre-Note ACH33 Remit.; ACH33-Remit;ecking;4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH44 ; NB 03 Pre-Note ACH44 None; ACH44-ACH;ecking;4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT003_003" vstsID="" Status="0" Name="Search Vendor with value is VendorDoesnotExist" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">null;null;null ; VendorDoesnotExist; 0</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT003_002" vstsID="" Status="0" Name="Search Vendor with value is blank" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11;NB 03 Pre-Note ACH11 Both.;ACH11-Main ; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB 03 Pre-Note ACH11 Both.; ACH11-Remit; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH22; NB 03 Pre-Note ACH22 Main. ;ACH22-Main; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH33 ;NB 03 Pre-Note ACH33 Remit.; ACH33-Remit; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VerifyPreNotesVendor" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID; Vendor Name; Address Name; SearchText; NumOfVendors</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH44 ; NB 03 Pre-Note ACH44 None; ACH44-ACH; null; 5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT004_001" vstsID="" Status="0" Name="Select for Pre-Notification List" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectedforPreNotificationList" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Verify Pre Notes Vendor Details List for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4</Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB_03PrNtACH22;  NB_03PrNtACH33; NB_03PrNtACH44</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT005_001" vstsID="" Status="0" Name="RemoveVendors" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="RemoveVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Remove Vendors for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4; RemoveRoworRomoveAllorCancel </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB_03PrNtACH22;  NB_03PrNtACH33; NB_03PrNtACH44; RemoveRow</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT005_002" vstsID="" Status="0" Name="Remove All Vendors by clicking into icon RemoveAll" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="RemoveVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Remove Vendors for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4; RemoveRoworRomoveAllorCancel </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB_03PrNtACH22;  NB_03PrNtACH33; NB_03PrNtACH44; RemoveAll</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT005_003" vstsID="" Status="0" Name="Unselect Vendors by clicking Cancel button" Description="" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="RemoveVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Remove Vendors for a Bank Account is hide/display (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4; RemoveRoworRomoveAllorCancel </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; NB_03PrNtACH22;  NB_03PrNtACH33; NB_03PrNtACH44; Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT006_001" vstsID="" Status="0" Name="Generate Pre-Notes for single vendor" Description="Generate Pre-Notes for single vendor" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GeneratePreNotes" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Create Pre Notes for a Bank Account, the PreNote information is based on VendorID or VendorName (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4 </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; null;  null; null</Param>
+                <Param Name="sTimeToCreatePreNote" TestBedPath="" Description="Time in seconds for the process Create PreNote take">12</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Create PreNote success or not">success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CompareTwoFiles" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Compare content line by line two files." Comment="">
+                <Param Name="sFile1" TestBedPath="" Description="Path to File 1 - Must begin with Files\\">Files\\PreNotes\\File1.txt</Param>
+                <Param Name="sFile2" TestBedPath="" Description="Path to File 2 - Must begin with Files\\ or LastFile() means newest File in folder E:\AutoTest\TestData\Files\Download">LastFile()</Param>
+                <Param Name="sExpected" TestBedPath="" Description="Expected result - true|false">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">SKIPROW(2)</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT007_001" vstsID="" Status="0" Name="Generate Pre-Notes for Multiple Vendors" Description="Generate Pre-Notes for Multiple Vendors" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GeneratePreNotes" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Create Pre Notes for a Bank Account, the PreNote information is based on VendorID or VendorName (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4 </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; null;  NB_03PrNtACH33; NB_03PrNtACH44</Param>
+                <Param Name="sTimeToCreatePreNote" TestBedPath="" Description="Time in seconds for the process Create PreNote take">10</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Create PreNote success or not">success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CompareTwoFiles" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Compare content line by line two files." Comment="">
+                <Param Name="sFile1" TestBedPath="" Description="Path to File 1 - Must begin with Files\\">Files\\PreNotes\\File2.txt</Param>
+                <Param Name="sFile2" TestBedPath="" Description="Path to File 2 - Must begin with Files\\ or LastFile() means newest File in folder E:\AutoTest\TestData\Files\Download">LastFile()</Param>
+                <Param Name="sExpected" TestBedPath="" Description="Expected result - true|false">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">SKIPROW(2)</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_PNT008_001" vstsID="" Status="0" Name="Displayed Date/Time of Pre-Note Last Generated" Description="Displayed Date/Time of Pre-Note Last Generated" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToBankAccounts" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Bank Accounts" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Bank Accounts Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GeneratePreNotes" Status="" Remote="Chrome" Product="Customer" Feature="Customer_BankAccount" StartTime="" FinishTime="" Description="Create Pre Notes for a Bank Account, the PreNote information is based on VendorID or VendorName (Images\Customer\BankAccount\15.png)" Comment="">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='BankAccount1']" Description="Bank Account Name need to Create PreNote">HO_Bank_CCD</Param>
+                <Param Name="sPropertyName" TestBedPath="" Description="Bank Account Name need to Create PreNote">Vendor ID 1; Vendor ID 2; Vendor ID 3; Vendor ID 4 </Param>
+                <Param Name="sValue" TestBedPath="" Description="Bank Account Name need to Create PreNote">NB_03PrNtACH11; null;  null; null</Param>
+                <Param Name="sTimeToCreatePreNote" TestBedPath="" Description="Time in seconds for the process Create PreNote take">7</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Create PreNote success or not">success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">CheckDateTime</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

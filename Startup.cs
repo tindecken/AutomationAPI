@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using AutomationAPI.Domain.Constant;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -20,6 +22,7 @@ namespace AutomationAPI
             Configuration = configuration;
             
             var contentRoot = configuration.GetValue<string>(WebHostDefaults.ContentRootKey);
+            ProjectConstant.sProjectFolder = contentRoot;
 
         }
 
@@ -29,6 +32,7 @@ namespace AutomationAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="New_Preconditiion1" vstsID="" Status="0" Name="CreateUserForFilter" Description="" Author="thanh.huynh" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sUserEmail</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sFirtName</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">ThanhAutoTest</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="None" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sGreetingMessage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Greetings ThanhAutoTest HuynhAutoTest</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ResetPasswordLink</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/setpassword</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="yes">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ResetPasswordLink</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com/#/setpassword</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">NewPassword</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Admin@12345</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">DuplicateEmailMessage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">The Email </Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">@sUserEmail@</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3"> address has already registered.</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Replace SQL file in order to Delete user</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteUser_AdminSite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@sUserEmail@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteUser_AdminSite.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Deleted User If Exist</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringAdminDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteUser_AdminSite.sql)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="" Description="URL will be open">https://outlook.office.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LoginEmail365" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\2.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">@sUserEmail@</Param>
+                <Param Name="sPassword" TestBedPath="" Description="Password">Jqcgroup@123</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout365" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Logout webmail 365 (Images\WebMail\Login\3.png)" Comment="no" />
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="AdminSiteCreateUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="UserPage, Use to create new User on Admin Site" Comment="yes">
+                <Param Name="sFirstName" TestBedPath="" Description="User FirstName">@sFirtName@</Param>
+                <Param Name="sLastName" TestBedPath="" Description="User LastName">@sLastName@</Param>
+                <Param Name="sEmail" TestBedPath="" Description="User Email">@sUserEmail@</Param>
+                <Param Name="sRole" TestBedPath="" Description="User Role , Separate by [;] symbol. Note, When sRole = Administrator, It's mean that Role Site Dashboards  will be checked automatically">Administrator</Param>
+                <Param Name="sIsClicked" TestBedPath="" Description="If you want to Click on Create Button then set sIsClicked = 'true', if you want to validate all required message then set it [validate], otherwise set to 'false' it will canceled create user">true</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Message displayed when user create successfully">User Created</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="AdminSiteCreateUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="Use to create new User on Admin Site (Images\AdminDev\UserManagement\1.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="User FirstName">@sFirtName@</Param>
+                <Param Name="sLastName" TestBedPath="" Description="User LastName">@sLastName@</Param>
+                <Param Name="sEmail" TestBedPath="" Description="User Email">@sUserEmail@</Param>
+                <Param Name="sRole" TestBedPath="" Description="User Role , Separate by [;] symbol. Note, When sRole = Administrator, It's mean that Role Site Dashboards  will be checked automatically">Call Center - User</Param>
+                <Param Name="sIsClicked" TestBedPath="" Description="If you want to Click on Create Button then set sIsClicked = 'true', if you want to validate all required message then set it [validate], otherwise set to 'false' it will canceled create user">create</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Message displayed when user create successfully">ValidateToastMessage(User Created)</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Expected(success|unsuccess) means clear all existing search chips before add new search chip">Expected(success)</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Logout" Comment="" />
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="" Description="URL will be open">https://outlook.office.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Refresh" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Refresh current page" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LoginEmail365" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\2.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">@sUserEmail@</Param>
+                <Param Name="sPassword" TestBedPath="" Description="Password">Jqcgroup@123</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CheckEmail365UserCreationResetPassword" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\3.png)" Comment="">
+                <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                <Param Name="sTitle" TestBedPath="" Description="Title of Email need to confirmed, null means by pass verify Title">acomcloud.com Administration - Account Created</Param>
+                <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, Just give the keyword need to verify, don't put all things heare, null means by pass verify content">@sGreetingMessage@</Param>
+                <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, Just give the keyword need to verify, don't put all things heare, null means by pass verify content">An account has been created for you</Param>
+                <Param Name="sResetLink" TestBedPath="" Description="This is hyperlink for resetpasword, just give the prefix included Env's URL">@ResetPasswordLink@</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="If you want to click to reset Link">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="SetNewPasswordEmail365" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Set new password for a user after click on the link reset password in email, this keyword should using after verify Email by KW CheckEmail365UserCreationResetPassword and sIsClick = true" Comment="">
+                <Param Name="sVerifyEmail" TestBedPath="" Description="Email address of user need to verify, null means by pass verify">@sUserEmail@</Param>
+                <Param Name="sNewPassword" TestBedPath="" Description="Input new password, null means by pass input">@NewPassword@</Param>
+                <Param Name="sConfirmNewPassword" TestBedPath="" Description="Input confirm new password, null means by pass input">@NewPassword@</Param>
+                <Param Name="sCheckButtonCreateStatus" TestBedPath="" Description="Check status of button Create, enable or disable, null means by pass input">enable</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Login with new User/Password</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="" Description="User Name">@sUserEmail@</Param>
+                <Param Name="sPassword" TestBedPath="" Description="Password">@NewPassword@</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC029" vstsID="" Status="0" Name="FilterUserByEmail" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="Filter Users in User Page (Images\AdminDev\UserManagement\4.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input FirstName need to filter, null means by pass input" />
+                <Param Name="sLastName" TestBedPath="" Description="Input LastName need to filter, null means by pass inpu" />
+                <Param Name="sEmail" TestBedPath="" Description="Input Email need to Filter, null means by pass select">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Verify expected result count, null means by pass verify">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC030" vstsID="" Status="0" Name="FilterUserFirstName" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="Filter Users in User Page (Images\AdminDev\UserManagement\4.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input FirstName need to filter, null means by pass input">ThanhAutoTest</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input LastName need to filter, null means by pass inpu" />
+                <Param Name="sEmail" TestBedPath="" Description="Input Email need to Filter, null means by pass select" />
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Verify expected result count, null means by pass verify">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC031" vstsID="" Status="0" Name="FilterUserLastName" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="Filter Users in User Page (Images\AdminDev\UserManagement\4.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input FirstName need to filter, null means by pass input" />
+                <Param Name="sLastName" TestBedPath="" Description="Input LastName need to filter, null means by pass inpu">HuynhAutoTest</Param>
+                <Param Name="sEmail" TestBedPath="" Description="Input Email need to Filter, null means by pass select" />
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Verify expected result count, null means by pass verify">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC032" vstsID="" Status="0" Name="FilterUserWithAllFields" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToAdminUserManagementPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterUser" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_UserManagement" StartTime="" FinishTime="" Description="Filter Users in User Page (Images\AdminDev\UserManagement\4.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input FirstName need to filter, null means by pass input">ThanhAutoTest</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input LastName need to filter, null means by pass inpu">HuynhAutoTest</Param>
+                <Param Name="sEmail" TestBedPath="" Description="Input Email need to Filter, null means by pass select">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Verify expected result count, null means by pass verify">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

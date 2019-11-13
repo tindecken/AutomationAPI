@@ -1,0 +1,1154 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome1" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome2" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome3" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome4" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome5" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+        <Client Name="Chrome6" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <Group ID="Immediately" Status="0" Name="" Description="" Author="" Comment="False">
+            <TestCase ID="PreconfigImmediately" vstsID="" Status="0" Name="Config notification setting all user to Immediately" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Configure notification seting for all user to Immediately</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome1" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome1" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='QCSupport']/Node[@Name='UserName']" Description="User Name">qcsupport@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome2" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome3" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome4" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome4@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome4" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome4" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="User Name">jqcgroup4@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome4" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome5" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome5@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome5" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome5" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User5']/Node[@Name='UserName']" Description="User Name">jqcgroup5@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User5']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome5" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome6" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome6@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome6" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome6" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome6" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome2" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome3" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome4" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome5" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome6" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="" />
+            </TestCase>
+            <TestCase ID="Immediately_1" vstsID="" Status="0" Name="Review and Allocate" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="NewCombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionCustomDB</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                    <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acomcloud-sa-test-001.database.windows.net</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                    <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                    <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acomcloud-sa-test-001</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                    <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">WatchMeTest444$</Param>
+                    <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                    <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                    <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                    <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                    <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                    <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                    <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                    <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                    <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                    <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email qcsupport</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='UserName']" Description="User Name">qcsupport@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email thaihoang.nguyen</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="" Description="Password">1Rivaldo@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email jqcgroup1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete the existing Invoice HO_Invoice_Immediately_1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                    <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\Payables\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#InvoiceNumber#</Param>
+                    <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">HO_Invoice_Immediately_1</Param>
+                    <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                    <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionCustomDB@</Param>
+                    <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\Download\\DeletePayablesInvoices.sql)</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Import Invoice</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="PayableGoToInbox" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Go to Inbox from Payables Page by clicking on Button Create Inbox" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllMyInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Delete All My Invoice (Images\Customer\PayablesInvoices\DeleteAllMyInvoice.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyyy</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\1.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Select Invoice In Tab My Uploads or All Uploads (Images\Customer\PayablesInvoices\SelectInvoice.png)" Comment="no">
+                    <Param Name="sTabName" TestBedPath="" Description="Tab need to Select Invoice - My Uploads or All Uploads, null means My Uploads">My Uploads</Param>
+                    <Param Name="sSearchString" TestBedPath="" Description="Input String for Search Invoice, can't be null">1.pdf</Param>
+                    <Param Name="sVerifyNumberOfResult" TestBedPath="" Description="Number of result after search">1</Param>
+                    <Param Name="sSelectOrder" TestBedPath="" Description="Other of Invoice need to select, null means select first Invoice">1</Param>
+                    <Param Name="sVerifySelectResult" TestBedPath="" Description="Verify select success or not, in case of Invoice is already used by other user">success</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="InputAndImportInvoiceData" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Input Invoice Data then Import it (Images\Customer\PayablesInvoices\InputAndImportInvoiceData.png)" Comment="no">
+                    <Param Name="sField1" TestBedPath="" Description="Format must have 6 parameters: FieldName;CheckExist;CheckRequired;CheckReadOnly;Value;ErrorMessage - CheckExist = exist or NotExist, CheckRequired = Required or NotRequired, CheckReadOnly = ReadOnly or NotReadOnly, Value = null means by pass input, ErrorMessage = ErrorMessage if any or NotError, null means by pass verify">Invoice Number;exist;Required;NotReadOnly;HO_Invoice_Immediately_1;NoError</Param>
+                    <Param Name="sField2" TestBedPath="" Description="">Invoice Date;exist;Required;NotReadyOnly;07/26/2018;Noerror</Param>
+                    <Param Name="sField3" TestBedPath="" Description="">Sub-Total Amount;Exist;NotRequired;NotReadOnly;500;NoError</Param>
+                    <Param Name="sField4" TestBedPath="" Description="">Vendor Name;Exist;Required;NotReadOnly;HO_Vendor_Pay;NoError</Param>
+                    <Param Name="sField5" TestBedPath="" Description="">Department;exist;NotRequired;NotReadOnly;Professional Services;NoError</Param>
+                    <Param Name="sField6" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField7" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField8" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField9" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField10" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField11" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField12" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField13" TestBedPath="" Description="">null</Param>
+                    <Param Name="sVerifyTotalAmount" TestBedPath="" Description="Total Amount need to verify">500.00</Param>
+                    <Param Name="sVerifyError" TestBedPath="" Description="Verify Error after input all field about">null</Param>
+                    <Param Name="sClickImport" TestBedPath="" Description="Click on Import button">click</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Toast Message need to verify after click on Import button">Invoice import successfully</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Check Email</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings qcsupport atlantic nguyen,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings Thai Hoang Nguyen,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings user 1,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome2" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome3" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="Configuration" Status="0" Name="" Description="" Author="" Comment="False">
+            <TestCase ID="Configuration_1" vstsID="" Status="0" Name="Customer only use Payment service" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="" />
+            <TestCase ID="Configuration_2" vstsID="" Status="0" Name="Customer only use Payables service" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="" />
+            <TestCase ID="Configuration_3" vstsID="" Status="0" Name="Customer use both Payment and Payable Service" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="" />
+            <TestCase ID="Configuration_4" vstsID="" Status="0" Name="Configure Workflow Notification Settings schedule will affect to all users in Customer Site" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="" />
+            <TestCase ID="Configuration_5" vstsID="" Status="0" Name="Format of Notification Schedule is: H:mm AM/PM TimeZone" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="" />
+        </Group>
+        <Group ID="One per day" Status="0" Name="" Description="" Author="" Comment="False">
+            <TestCase ID="PreconfigOncePerDay" vstsID="" Status="0" Name="Config notification setting all users to Once Per Day" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="yes">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Configure notification seting for all user to Immediately</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome1" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome1" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome2" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='QCSupport']/Node[@Name='UserName']" Description="User Name">qcsupport@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome2" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome3" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome4" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome4@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome4" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome4" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="User Name">jqcgroup4@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome4" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome5" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome5@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome5" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome5" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User5']/Node[@Name='UserName']" Description="User Name">jqcgroup5@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User5']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome5" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome6" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome6@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome6" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome6" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureNotificationSetting" Status="" Remote="Chrome6" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Config notification setting for a User(Images\Customer\PayablesInvoices\PayableConfigureNotificationSetting.png)" Comment="yes">
+                    <Param Name="sExportStatusAlerts" TestBedPath="" Description="Config Payables Invoice Export Status Alerts, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sNewTaskAssignmentEmail" TestBedPath="" Description="New Task Assignment E-mail Notifications, active or inactive, null means by pass config it">active</Param>
+                    <Param Name="sNotifyMe" TestBedPath="" Description="Config Notify me of new tasks, Once per day or Immediately, null means by pass config it">Immediately</Param>
+                    <Param Name="sExportStatusEmail" TestBedPath="" Description="CConfig Payables Invoice Export Status Email, active or inactive, null means by pass config it">inactive</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Verify Toast Message, null means by pass verify">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminua.acomsolutions.com</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/entity/customers</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome3" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminua.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome3" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPage" Status="" Remote="Chrome3" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="PayableConfigureWorkflowNotification" Status="" Remote="Chrome3" Product="AdminDev" Feature="AdminDev_CustomerManagement" StartTime="" FinishTime="" Description="Payables Invoices - Configure Workflow Notification Settings (Images\AdminDev\Customer_Management\PayableConfigureWorkflowNotification.png)" Comment="">
+                    <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to configure">manualqc</Param>
+                    <Param Name="sHour" TestBedPath="" Description="select hour 0 - 24">10</Param>
+                    <Param Name="sMinute" TestBedPath="" Description="select minus">10</Param>
+                    <Param Name="sTimeZone" TestBedPath="" Description="Select Time Zone">Asia/Saigon</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify config success or not, null means by pass verify">success</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome2" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome3" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome4" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome5" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome6" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+            </TestCase>
+        </Group>
+        <Group ID="Scenarios" Status="0" Name="" Description="" Author="" Comment="False">
+            <TestCase ID="New_PreGroup2" vstsID="" Status="0" Name="Upload 8 Invoices" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="PayableGoToInbox" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Go to Inbox from Payables Page by clicking on Button Create Inbox" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllMyInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Delete All My Invoice (Images\Customer\PayablesInvoices\DeleteAllMyInvoice.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\1.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\2.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\3.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\4.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\5.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\6.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.99 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\7.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">1.97 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyy H:</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\8.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.15 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+            </TestCase>
+        </Group>
+        <Group ID="PressHyperLink" Status="0" Name="" Description="" Author="" Comment="False">
+            <TestCase ID="PressHyperLink_1" vstsID="" Status="0" Name="Task is still exist in the system" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="NewCombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionCustomDB</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                    <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acomcloud-sa-test-001.database.windows.net</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                    <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                    <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acomcloud-sa-test-001</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                    <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">WatchMeTest444$</Param>
+                    <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                    <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                    <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                    <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                    <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                    <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                    <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                    <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                    <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                    <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email jqcgroup1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="yes">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete the existing Invoice HO_Invoice_Link_1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="yes">
+                    <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\Payables\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#InvoiceNumber#</Param>
+                    <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">HO_Invoice_Link_1</Param>
+                    <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="yes">
+                    <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionCustomDB@</Param>
+                    <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\Download\\DeletePayablesInvoices.sql)</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="yes">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Import Invoice</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="yes">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="yes">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="PayableGoToInbox" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Go to Inbox from Payables Page by clicking on Button Create Inbox" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllMyInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Delete All My Invoice (Images\Customer\PayablesInvoices\DeleteAllMyInvoice.png)" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyyy</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="yes">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\1.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Select Invoice In Tab My Uploads or All Uploads (Images\Customer\PayablesInvoices\SelectInvoice.png)" Comment="yes">
+                    <Param Name="sTabName" TestBedPath="" Description="Tab need to Select Invoice - My Uploads or All Uploads, null means My Uploads">My Uploads</Param>
+                    <Param Name="sSearchString" TestBedPath="" Description="Input String for Search Invoice, can't be null">1.pdf</Param>
+                    <Param Name="sVerifyNumberOfResult" TestBedPath="" Description="Number of result after search">1</Param>
+                    <Param Name="sSelectOrder" TestBedPath="" Description="Other of Invoice need to select, null means select first Invoice">1</Param>
+                    <Param Name="sVerifySelectResult" TestBedPath="" Description="Verify select success or not, in case of Invoice is already used by other user">success</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="InputAndImportInvoiceData" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Input Invoice Data then Import it (Images\Customer\PayablesInvoices\InputAndImportInvoiceData.png)" Comment="yes">
+                    <Param Name="sField1" TestBedPath="" Description="Format must have 6 parameters: FieldName;CheckExist;CheckRequired;CheckReadOnly;Value;ErrorMessage - CheckExist = exist or NotExist, CheckRequired = Required or NotRequired, CheckReadOnly = ReadOnly or NotReadOnly, Value = null means by pass input, ErrorMessage = ErrorMessage if any or NotError, null means by pass verify">Invoice Number;exist;Required;NotReadOnly;HO_Invoice_Link_1;NoError</Param>
+                    <Param Name="sField2" TestBedPath="" Description="">Invoice Date;exist;Required;NotReadyOnly;07/26/2018;Noerror</Param>
+                    <Param Name="sField3" TestBedPath="" Description="">Sub-Total Amount;Exist;NotRequired;NotReadOnly;500;NoError</Param>
+                    <Param Name="sField4" TestBedPath="" Description="">Vendor Name;Exist;Required;NotReadOnly;HO_Vendor_Pay;NoError</Param>
+                    <Param Name="sField5" TestBedPath="" Description="">Department;exist;NotRequired;NotReadOnly;Professional Services;NoError</Param>
+                    <Param Name="sField6" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField7" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField8" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField9" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField10" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField11" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField12" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField13" TestBedPath="" Description="">null</Param>
+                    <Param Name="sVerifyTotalAmount" TestBedPath="" Description="Total Amount need to verify">500.00</Param>
+                    <Param Name="sVerifyError" TestBedPath="" Description="Verify Error after input all field about">null</Param>
+                    <Param Name="sClickImport" TestBedPath="" Description="Click on Import button">click</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Toast Message need to verify after click on Import button">Invoice import successfully</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="yes">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Check Email</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="yes">
+                    <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionCustomDB@</Param>
+                    <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">select TransactionId from PayablesInvoiceTransactions where InvoiceNumber = 'HO_Invoice_Link_1'</Param>
+                    <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file, WriteResultToBuffer(sVariable) means write return value in to Buffer File">WriteResultToBuffer(sTransactionID)</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="yes">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">VerifyData</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">1;</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@sTransactionID@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">;HO_Invoice_Link_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="yes">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings user 1,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">@VerifyData@</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">@sTransactionID@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome1" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="yes">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="yes" />
+            </TestCase>
+            <TestCase ID="PressHyperLink_2" vstsID="" Status="0" Name="Task is gone" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="NewCombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionCustomDB</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                    <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acomcloud-sa-test-001.database.windows.net</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                    <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                    <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acomcloud-sa-test-001</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                    <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">WatchMeTest444$</Param>
+                    <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                    <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                    <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                    <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                    <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                    <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                    <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                    <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                    <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                    <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email qcsupport</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='UserName']" Description="User Name">qcsupport@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email thaihoang.nguyen</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="" Description="Password">1Rivaldo@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete email jqcgroup1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LoginEmail365" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Delete the existing Invoice HO_Invoice_Immediately_1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                    <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\Payables\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#InvoiceNumber#</Param>
+                    <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">HO_Invoice_Immediately_1</Param>
+                    <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeletePayablesInvoices.sql</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                    <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionCustomDB@</Param>
+                    <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                    <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\Download\\DeletePayablesInvoices.sql)</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Import Invoice</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="PayableGoToInbox" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Go to Inbox from Payables Page by clicking on Button Create Inbox" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="DeleteAllMyInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Delete All My Invoice (Images\Customer\PayablesInvoices\DeleteAllMyInvoice.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="">
+                    <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                    <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyyy</Param>
+                </Keyword>
+                <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                    <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\1.pdf</Param>
+                    <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                    <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                    <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">0.11 MB</Param>
+                    <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">@CurrentDate@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Select Invoice In Tab My Uploads or All Uploads (Images\Customer\PayablesInvoices\SelectInvoice.png)" Comment="no">
+                    <Param Name="sTabName" TestBedPath="" Description="Tab need to Select Invoice - My Uploads or All Uploads, null means My Uploads">My Uploads</Param>
+                    <Param Name="sSearchString" TestBedPath="" Description="Input String for Search Invoice, can't be null">1.pdf</Param>
+                    <Param Name="sVerifyNumberOfResult" TestBedPath="" Description="Number of result after search">1</Param>
+                    <Param Name="sSelectOrder" TestBedPath="" Description="Other of Invoice need to select, null means select first Invoice">1</Param>
+                    <Param Name="sVerifySelectResult" TestBedPath="" Description="Verify select success or not, in case of Invoice is already used by other user">success</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="InputAndImportInvoiceData" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Input Invoice Data then Import it (Images\Customer\PayablesInvoices\InputAndImportInvoiceData.png)" Comment="no">
+                    <Param Name="sField1" TestBedPath="" Description="Format must have 6 parameters: FieldName;CheckExist;CheckRequired;CheckReadOnly;Value;ErrorMessage - CheckExist = exist or NotExist, CheckRequired = Required or NotRequired, CheckReadOnly = ReadOnly or NotReadOnly, Value = null means by pass input, ErrorMessage = ErrorMessage if any or NotError, null means by pass verify">Invoice Number;exist;Required;NotReadOnly;HO_Invoice_Immediately_1;NoError</Param>
+                    <Param Name="sField2" TestBedPath="" Description="">Invoice Date;exist;Required;NotReadyOnly;07/26/2018;Noerror</Param>
+                    <Param Name="sField3" TestBedPath="" Description="">Sub-Total Amount;Exist;NotRequired;NotReadOnly;500;NoError</Param>
+                    <Param Name="sField4" TestBedPath="" Description="">Vendor Name;Exist;Required;NotReadOnly;HO_Vendor_Pay;NoError</Param>
+                    <Param Name="sField5" TestBedPath="" Description="">Department;exist;NotRequired;NotReadOnly;Professional Services;NoError</Param>
+                    <Param Name="sField6" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField7" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField8" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField9" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField10" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField11" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField12" TestBedPath="" Description="">null</Param>
+                    <Param Name="sField13" TestBedPath="" Description="">null</Param>
+                    <Param Name="sVerifyTotalAmount" TestBedPath="" Description="Total Amount need to verify">500.00</Param>
+                    <Param Name="sVerifyError" TestBedPath="" Description="Verify Error after input all field about">null</Param>
+                    <Param Name="sClickImport" TestBedPath="" Description="Click on Import button">click</Param>
+                    <Param Name="sVerifyToastMessage" TestBedPath="" Description="Toast Message need to verify after click on Import button">Invoice import successfully</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                    <Param Name="sComment" TestBedPath="" Description="comment">Check Email</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings qcsupport atlantic nguyen,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome2" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome2@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome2" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings Thai Hoang Nguyen,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="ActivateBrowser" Status="" Remote="Chrome3" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                    <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome3@</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="VerifyNewTaskAssignmentEmail" Status="" Remote="Chrome3" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\VerifyNewTaskAssignmentEmail.png)" Comment="no">
+                    <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                    <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='PayableEmailNewTask']/Node[@Name='Subject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc.acomsolutions.com - You've Been Assigned New Tasks</Param>
+                    <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                    <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                    <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Greetings user 1,</Param>
+                    <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">Here are the new tasks assigned to you.</Param>
+                    <Param Name="sContent3" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                    <Param Name="sTaskName" TestBedPath="" Description="Task Name need to verify, can't be null">Review and Allocate</Param>
+                    <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">Transaction ID;Invoice Number;Vendor ID;Vendor Name;Invoice Date;Total Amount</Param>
+                    <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">1;null;HO_Invoice_Immediately_1;HO_Vendor_Payables_ID;HO_Vendor_Payables_Name;07/26/2018;500.00</Param>
+                    <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                    <Param Name="sPressHyperlink" TestBedPath="" Description="Press hyperlink on TransactionID, null means by pass press hyperlink">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional Variable">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome2" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome3" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+    </Tests>
+</TestSuite>

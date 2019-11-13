@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="TC0000000" vstsID="" Status="0" Name="Generate CSV" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="ExportXMLToCSV" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="ExportXMLToCSV a file with option replace if exist" Comment="">
+                <Param Name="sXMLFilePath" TestBedPath="" Description="Source XML File path">D:\\AutoTestManagement_Tool\\TestScriptsRepository\\TestPlan\\VCardOnboarding\\VCardOnBoarding_Group7_5th_Test.xml</Param>
+                <Param Name="sCSVFilePath" TestBedPath="" Description="sCSVFilePath ">D:\\AutoTestManagement_Tool\\TestScriptsRepository\\TestPlan\\VCardOnboarding\\VCardOnBoarding_Group7_5th_Test.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="list of keywords you want to remove in csv">LaunchBrowser;Login;GoToVCO;CleanUp;Logout;CloseBrowser</Param>
+            </Keyword>
+        </TestCase>
+        <Group ID="TC004" Status="0" Name="Payment Method change from ACH to ACH" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_004_1_RunCsv" vstsID="" Status="0" Name="Payment Method change from ACH Enrolled to ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\004\\VCardOnBoarding_Group7_004_01.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_004_2_RunCsv" vstsID="" Status="0" Name="Payment Method change from ACH Verbal to ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\004\\VCardOnBoarding_Group7_004_02.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_004_3_RunCsv" vstsID="" Status="0" Name="Payment Method change from Require Acount Number to ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\004\\VCardOnBoarding_Group7_004_03.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_004_4_RunCsv" vstsID="" Status="0" Name="Payment Method change from Self ACH to ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\004\\VCardOnBoarding_Group7_004_04.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="TC005" Status="0" Name="Payment Method change from ACH to NOT ACH Enrolled" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_005_1_RunCsv" vstsID="" Status="0" Name="Payment Method change from ACH Enrolled to NOT ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\005\\VCardOnBoarding_Group7_005_01.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_005_2_RunCsv" vstsID="" Status="0" Name="Payment Method change from ACH Verbal to NOT ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\005\\VCardOnBoarding_Group7_005_02.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_005_3_RunCsv" vstsID="" Status="0" Name="Payment Method change from Require Account Number to NOT ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\005\\VCardOnBoarding_Group7_005_03.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_005_4_RunCsv" vstsID="" Status="0" Name="Payment Method change from Self ACH to NOT ACH" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\005\\VCardOnBoarding_Group7_005_04.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="TC006" Status="0" Name="Change status from NOT VCard to NOT VCard" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_006_1_RunCsv" vstsID="" Status="0" Name="Payment Method change from Acept Term, VCard to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_01.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_2_RunCsv" vstsID="" Status="0" Name="Payment Method change from Awaiting Response to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_02.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_3_RunCsv" vstsID="" Status="0" Name="Payment Method change from Declined to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_03.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_4_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Contact to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_04.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_5_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Longer Vendor to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_05.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_6_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Response to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_06.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_7_RunCsv" vstsID="" Status="0" Name="Payment Method change from Other to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_07.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_8_RunCsv" vstsID="" Status="0" Name="Payment Method change from Pending Contact to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_08.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_9_RunCsv" vstsID="" Status="0" Name="Payment Method change from Previously Enrolled to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_09.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_10_RunCsv" vstsID="" Status="0" Name="Payment Method change from Required Customer Number to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_10.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_11_RunCsv" vstsID="" Status="0" Name="Payment Method change from Required Phone Number to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_11.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_006_12_RunCsv" vstsID="" Status="0" Name="Payment Method change from VCard Verbal to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\006\\VCardOnBoarding_Group7_006_12.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="TC007" Status="0" Name="Status change from Other to VCard" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_007_1_RunCsv" vstsID="" Status="0" Name="Payment Method change from Other to Self Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\007\\VCardOnBoarding_Group7_007_01.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_007_2_RunCsv" vstsID="" Status="0" Name="Payment Method change from Other to VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\007\\VCardOnBoarding_Group7_007_02.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="TC008" Status="0" Name="Status change from VCard Enrolled to Not Vcard Enrolled" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_008_1a_RunCsv" vstsID="" Status="0" Name="Payment Method change from Self Enrolled to NOT Vcard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\008\\VCardOnBoarding_Group7_008_01a.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_008_1b_c_l_o_RunCsv" vstsID="" Status="0" Name="Payment Method change from Self Enrolled to NOT Vcard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\008\\VCardOnBoarding_Group7_008_01b_c_l_o.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_008_2a_RunCsv" vstsID="" Status="0" Name="Payment Method change from VCard Enrolled to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\008\\VCardOnBoarding_Group7_008_02a.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_008_2b_c_l_o_RunCsv" vstsID="" Status="0" Name="Payment Method change from VCard Enrolled to NOT VCard Enrolled" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\008\\VCardOnBoarding_Group7_008_02b_c_l_o.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+        <Group ID="TC009" Status="0" Name="Status change from Other to ACH Enrolled" Description="" Author="tuy.tran" Comment="False">
+            <TestCase ID="TC_009_1_RunCsv" vstsID="" Status="0" Name="Payment Method change from  Accepts Vcard, Terms to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_01.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_2_RunCsv" vstsID="" Status="0" Name="Payment Method change from Awaiting Response to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_02.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_3_RunCsv" vstsID="" Status="0" Name="Payment Method change from Declined to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_03.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_4_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Contact to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_04.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_5_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Longer Vendor to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_05.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_6_RunCsv" vstsID="" Status="0" Name="Payment Method change from No Response to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_06.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_7_RunCsv" vstsID="" Status="0" Name="Payment Method change from Other to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_07.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_8_RunCsv" vstsID="" Status="0" Name="Payment Method change from Pending Contact to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_08.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_9_RunCsv" vstsID="" Status="0" Name="Payment Method change from Previously Enrolled to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_09.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_10_RunCsv" vstsID="" Status="0" Name="Payment Method change from Required Customer Number to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_010.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_11_RunCsv" vstsID="" Status="0" Name="Payment Method change from Required Phone Number to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_011.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="TC_009_12_RunCsv" vstsID="" Status="0" Name="Payment Method change from Vcard Verbal to ACH Category" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="SetSQLConnectionString" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="">
+                    <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|xampleqc</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                    <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">null</Param>
+                    <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                    <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\009\\VCardOnBoarding_Group7_009_012.csv</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+    </Tests>
+</TestSuite>

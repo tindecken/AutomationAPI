@@ -1,0 +1,1428 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+        <Client Name="Chrome1" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome2" Type="Chrome" Address="" Description="" />
+        <Client Name="Chrome3" Type="Chrome" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="Preconfig_WEX_Credit" vstsID="" Status="0" Name="Create Banks, Import Vendor" Description="" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Get UserID of a user based on email</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">GetUserID</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT UserId FROM dbo.Users WHERE Email = '</Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="Variable 2">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">'</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@GetUserID@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">1 row</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">WriteResultToBuffer(UserID)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">--- Create Banks 1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_Credit_1</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserID#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@UserID@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\CreateBankAccount_CCD.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">--- Create Banks 2</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_Credit_2</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserID#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@UserID@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\CreateBankAccount_CCD.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">--- Create Banks 3</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_TimeOut']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_TimeOut</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserID#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@UserID@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\CreateBankAccount_CCD.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\CreateBankAccount_CCD.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">--- Import Vendors</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc2.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='CustomerManagement_URL']" Description="Variable 2">/#/app/entity/customers</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin@1233</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPage" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="no">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="MasterDataUploadVendor" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_CustomerManagement" StartTime="" FinishTime="" Description="Master Data Upload Vendor (Images\AdminDev\Customer_Management\MasterDataUploadVendor.png)" Comment="no">
+                <Param Name="sCustomerName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Customer Name need to configure">manualqc2</Param>
+                <Param Name="sVendorFormat" TestBedPath="" Description="Vendor Master Data File Format">Standard Format - Vendors</Param>
+                <Param Name="sFilePath" TestBedPath="" Description="Path to vendor file need to upload">Files\\VendorMaster\\__VendorMasterData4AutoTest.csv</Param>
+                <Param Name="sFilePath2" TestBedPath="" Description="In some case we can upload 2 files. put this null if ignore, If you put value in here, please help make sure that flow support import 2 input files">null</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Expected of Upload Result">success</Param>
+                <Param Name="sExpectedMessage" TestBedPath="" Description="Expected of Upload Message, correct format: Expected_Address_Message;Expected_Vendor_Message">null</Param>
+                <Param Name="sIsCancel" TestBedPath="" Description="After Import if you want to click on Cancel button then set it true">true</Param>
+                <Param Name="sIsStartOver" TestBedPath="" Description="After Import if you want to click on Start Over button then set it true">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Back" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="This keyword will click on Back Button on Top Menu" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">2</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Back" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="This keyword will click on Back Button on Top Menu" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Refresh" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Refresh current page" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="BankExportSetup" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_CustomerManagement" StartTime="" FinishTime="" Description="Configuration for Bank Export (Images\AdminDev\Customer_Management\7.png)" Comment="no">
+                <Param Name="sCustomerName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Customer Name need to configure">manualqc2</Param>
+                <Param Name="sBankName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='Name']" Description="Bank Name need to configure">HO_Bank_WEX_Credit_1</Param>
+                <Param Name="sPGPEncrypt" TestBedPath="" Description="Check ON/OFF for ACH or POS encrypt checkbox">null</Param>
+                <Param Name="sPGPFile" TestBedPath="" Description="path of PGP Public Key file">null</Param>
+                <Param Name="sExportSetting" TestBedPath="" Description="use correct keyword format: Auto|Manual or Schedule(hh;mm;TimeZone;ON/OFF)">Manual</Param>
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="Back" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="This keyword will click on Back Button on Top Menu" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="BankExportSetup" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_CustomerManagement" StartTime="" FinishTime="" Description="Configuration for Bank Export (Images\AdminDev\Customer_Management\7.png)" Comment="no">
+                <Param Name="sCustomerName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Customer Name need to configure">manualqc2</Param>
+                <Param Name="sBankName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='Name']" Description="Bank Name need to configure">HO_Bank_WEX_Credit_2</Param>
+                <Param Name="sPGPEncrypt" TestBedPath="" Description="Check ON/OFF for ACH or POS encrypt checkbox">null</Param>
+                <Param Name="sPGPFile" TestBedPath="" Description="path of PGP Public Key file">null</Param>
+                <Param Name="sExportSetting" TestBedPath="" Description="use correct keyword format: Auto|Manual or Schedule(hh;mm;TimeZone;ON/OFF)">Auto</Param>
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="Back" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="This keyword will click on Back Button on Top Menu" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Enroll Vcard for Vendor HO_Vendor_EOD</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Admin_GoToVendorEnrollmentsPage" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Vendor Enrollments Page" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorEnrollments_SelectCustomerSiteAndCategory" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Vendor Enrollments page - select a Customer site than select a Category" Comment="no">
+                <Param Name="sSiteName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="provide the Customer site or Customer Name to select">https://manualqc2.acomcloud.com</Param>
+                <Param Name="sCategory" TestBedPath="" Description="provide the Category name to select">All Vendors</Param>
+                <Param Name="sTotalVendorOfCat" TestBedPath="" Description="Check total vendor number of selected Category">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">VendorFilter</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Vendor Number</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">;Equal;</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">HO_Vendor_EOD</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorEnrollment_FilterVendorOnMainPage" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Vendor Enrollments page - Filter Vendor" Comment="no">
+                <Param Name="sFilter" TestBedPath="" Description="filter meta data: sField1;sOperator1;sValue1|sField2;sOperator2;sValue2">@VendorFilter@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">ByPassWhenExist(true)</Param>
+            </Keyword>
+            <Keyword Name="VendorEnrollment_OpenVendorProfile" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Vendor Enrollments page - Select to View an item from Vendor Enrollment list" Comment="no">
+                <Param Name="sItemIndex" TestBedPath="" Description="Select a vendor by index - count from 1, will ignore sVendorId and sVendorName input values if not null">null</Param>
+                <Param Name="sVendorId" TestBedPath="" Description="Select by vendor ID">HO_Vendor_EOD</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="Select by Vendor Name, first matched">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">ByPassWhenExist(true)</Param>
+            </Keyword>
+            <Keyword Name="VendorProfileUnenrollVcard" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Unenroll Vcard, Run this keyword after keyword VendorEnrollment_OpenVendorProfile" Comment="no">
+                <Param Name="sUnenrollReason" TestBedPath="" Description="Reason of unenrollment">Other</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="VendorProfile_EnrollVcard" Status="" Remote="Chrome" Product="AdminDev" Feature="Admin_EnrollmentServices" StartTime="" FinishTime="" Description="Enroll Vcard, Run this keyword after keyword VendorEnrollment_OpenVendorProfile" Comment="no">
+                <Param Name="sIsAccountLimit" TestBedPath="" Description="Vendor has Virtual Card Amount Limit">null</Param>
+                <Param Name="sAccountLimit" TestBedPath="" Description="Virtual Card Amount Limit number">null</Param>
+                <Param Name="sIsPay4You" TestBedPath="" Description="Check or uncheck Pay4You">CHECK</Param>
+                <Param Name="sIsBoostIntercept" TestBedPath="" Description="Check or uncheck Boost Intercept">null</Param>
+                <Param Name="sBoostIdentifierType" TestBedPath="" Description="Select a Boost Identifier Type">null</Param>
+                <Param Name="sBoostValue" TestBedPath="" Description="Input Boost Email Address or Boost Customer ID value, Boost Store ID value or Boost Vendor ID value">null</Param>
+                <Param Name="sMerchantReferenceNumber" TestBedPath="" Description="Input Merchant Reference Number">null</Param>
+                <Param Name="sIsEmailRemittance" TestBedPath="" Description="Check or uncheck EmailRecipient">UNCHECK</Param>
+                <Param Name="sRecipient" TestBedPath="" Description="Select Email Recipient option">null</Param>
+                <Param Name="sRecipientEmail" TestBedPath="" Description="Input Recipient Email Address">null</Param>
+                <Param Name="sCampaignSource" TestBedPath="" Description="Select Campaign Source">Call Out</Param>
+                <Param Name="sOptional" TestBedPath="" Description="">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="EOD_WEX_Credit_1" vstsID="" Status="0" Name="Send email to Support when failure of call EOD API" Description="No Company Number on Mock DB" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Email Content</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">EmailErrorContent</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">4</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 1">manualqc2</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|EMPTY|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='VCardAccount1']/Node[@Name='CompanyNumber']" Description="Variable 3">888888</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4"> 9999 1001 Exception of type \'TChek.Common.WebServices.SecurityDataAccess.SecurityException\' was thrown.</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5" />
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="" Description="Variable 7" />
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="" Description="Variable 9" />
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">DB variables</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringMOCKDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='WexMockDatabase']" Description="Variable 9">comdatatest</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Clear EOD History</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\EOD\\WEX_EOD_Clear.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete payments in Bank 1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_Credit_1</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete support email</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LoginEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Login" StartTime="" FinishTime="" Description="Login To Webmail (Images\WebMail\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='UserName']" Description="User Name">qcsupport@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='User']/Node[@Name='Qcsupport']/Node[@Name='Password']" Description="Password">Jqcgroup@123</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="DeleteAllEmail365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Delete all email (Images\WebMail\Home\4.png)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Upload payments</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payments Feature" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="UploadNewPayment" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_PendingTab" StartTime="" FinishTime="" Description="Upload new payment" Comment="no">
+                <Param Name="sCSVFile" TestBedPath="" Description="CSV file need to import">Files\\EOD\\EOD1.csv</Param>
+                <Param Name="sFileFormat" TestBedPath="" Description="Payment Data Format File">Standard</Param>
+                <Param Name="sAutomaticallyCreateBatch" TestBedPath="" Description="Check or uncheck on checkbox Automatically Create Batch on Import - check|uncheck">uncheck</Param>
+                <Param Name="sBankAccount" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_Credit_1</Param>
+                <Param Name="sExpectedWarning" TestBedPath="" Description="Expected Warning https://i.imgur.com/Xy5xoja.png - YesAndExit means Pass if have icon warning then Exit Create Payment - YesAndNotExit means Pass if have icon warning then continue test case - No means not check this icon - YesAndExit|YesAndNotExit|no">null</Param>
+                <Param Name="sExpectedError" TestBedPath="" Description="Expected Error https://i.imgur.com/Xy5xoja.png - Yes means Pass if have icon error - No mean not check this icon - Yes|No">null</Param>
+                <Param Name="sExpectedImportResult" TestBedPath="" Description="Expected import status - Success|UnSuccess">Success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Proccess Payment</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CreateNewBatchAddMultiplePayments" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Create new Batch - This keyword is an enhancement of keyword EditABatch, it allow add multiple Payments (Images\Customer\Payment\.png)" Comment="no">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_Credit_1</Param>
+                <Param Name="sBatchName" TestBedPath="" Description="Name of Batch need to create - null means default">Batch_EOD1_1</Param>
+                <Param Name="sBatchDescription" TestBedPath="" Description="Description of Batch - null means default">null</Param>
+                <Param Name="sAddPayment1" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_1_1;null</Param>
+                <Param Name="sAddPayment2" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_1_2;null</Param>
+                <Param Name="sAddPayment3" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment4" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment5" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment6" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment7" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment8" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment9" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment10" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sActionName" TestBedPath="" Description="Action after input all information -  Null means save">SaveAndProcess</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ProcessPaymentBatch" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Process Payment or Batch, must open Process Payment/Batch Popup before use this keyword, in normally, this keyword is use after keyword DoActionOnFirstBatch or SelectDoActionOnABatch  with action Name: Process Batch  or ClickProcessOnFirstPayment(Images\Customer\Payment\9.png)" Comment="no">
+                <Param Name="sOverridePaymentDate" TestBedPath="" Description="Check or Uncheck on checkbox Override Payment Date with Processing Date">uncheck</Param>
+                <Param Name="sSendPaymentEmailNotifications" TestBedPath="" Description="Check or Uncheck on checkbox Send Payment E-mail Notifications">uncheck</Param>
+                <Param Name="sIncludeRemittanceDetails" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details">uncheck</Param>
+                <Param Name="sACHEffectiveEntryDate" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details - Format MM/dd/yyyy - null means leave if by default value">null</Param>
+                <Param Name="sExpectedProcess" TestBedPath="" Description="Success or Unsuccess">Success</Param>
+                <Param Name="sDownloadFile" TestBedPath="" Description="ACH means download ACH file, POSITIVEPAY means download Positive Pay file, ACHandPOSITIVEPAY means download ACH and Positive Pay, null means by pass download file">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ContinueProcessOtherPayment(yes) - Verify one of Payment of Batch can't process, value yes means continue proccess, cancel means cancel process batch, HangOn(done) means verity the dialog HangOn and click on Button Done)">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete record on MOCKDATA</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLDeleteRecordMOCKDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">DELETE CreditInfos WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='VCardAccount1']/Node[@Name='CompanyNumber']" Description="Variable 2">888888</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringMOCKDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLDeleteRecordMOCKDB@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Update customer DB to minus 1 day (for running EOD Request)</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLMinusOneDayCredit1</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">UPDATE dbo.WXVirtualCardTransactions SET CreatedDatetime = DATEADD(DAY,-1, GETDATE()) WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_1']/Node[@Name='VCardAccount1']/Node[@Name='CompanyNumber']" Description="Variable 2">888888</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLMinusOneDayCredit1@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Run EOD Request</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">EndOfDayRequestBody</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">5</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">{\"Environment\":\"</Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Body']/Node[@Name='Environment']" Description="Variable 2">MOCK</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">\",\"SiteName\":\"</Param>
+                <Param Name="sVar4" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Body']/Node[@Name='SiteName']" Description="Variable 4">manualqc2</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">\"}</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sVar7" TestBedPath="" Description="Variable 7">null</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">null</Param>
+                <Param Name="sVar9" TestBedPath="" Description="Variable 9">null</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="sendPOSTJsonRequest" Status="" Remote="None" Product="WinApp" Feature="RESTApi" StartTime="" FinishTime="" Description="send POST with Json in Body" Comment="no">
+                <Param Name="requestURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Url']" Description="Request URI">https://acom-preua-webapp-vcardapi-wx.azurewebsites.net/api/v1/business/EndOfDay</Param>
+                <Param Name="sAuthorization" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Authorization']" Description="Authorization for the request">Bearer 2345568e-e50f-4ec5-a421-edd9c0ae4153</Param>
+                <Param Name="sreqJsonBody" TestBedPath="" Description="Request body in json format. use format: name1:value1|name2:value2">@EndOfDayRequestBody@</Param>
+                <Param Name="sExpectResponseCode" TestBedPath="" Description="expected code responding">200</Param>
+                <Param Name="sExpectResponseBody" TestBedPath="" Description="expected body responding in json format">End of day successful.</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">120</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Check error is sent to Support email</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome1" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome1@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='Webmail']/Node[@Name='Site_url']" Description="URL will be open">https://outlook.office.com/owa/</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title need to verify by contains way, null means by pass verify it">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CheckEmailInInbox365" Status="" Remote="Chrome1" Product="WebMail" Feature="WebMail_Home" StartTime="" FinishTime="" Description="Check Email in Inbox, Verify Email exist or not in Inbox base on From and Title, then verify content of that email (Images\WebMail\Home\3.png)" Comment="no">
+                <Param Name="sFrom" TestBedPath="" Description="Email From need to verify by exactly, null means by pass verify by From">no-reply@acomsolutions.com</Param>
+                <Param Name="sTitle" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='Email']/Node[@Name='WEX_Credit']/Node[@Name='ErrorSubject']" Description="Email From need to verify by contains, null means by pass verify by From">manualqc2.acomcloud.com - EOD Credit Info Process Error</Param>
+                <Param Name="sExpectedNumberOfEmail" TestBedPath="" Description="Expected number of email found base on inputted sFrom and sTitle, support compare &gt;, null by pass verify it">1</Param>
+                <Param Name="sOpenEmailNumber" TestBedPath="" Description="Click on email number found base on sFrom and sTitle, null means by pass open email">1</Param>
+                <Param Name="sContent1" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">@EmailErrorContent@</Param>
+                <Param Name="sContent2" TestBedPath="" Description="Content of Opened Email, null means by pass verify content">null</Param>
+                <Param Name="sMasterCardNumber" TestBedPath="" Description="Verify MasterCard Number, input digit only, no space, null means by pass verify">null</Param>
+                <Param Name="sExpirationDate" TestBedPath="" Description="Verify Expiration Date, format MM/dd, means by pass verify">null</Param>
+                <Param Name="sSecurityCode" TestBedPath="" Description="Verify Security Code, means by pass verify">null</Param>
+                <Param Name="sPaymentNumber" TestBedPath="" Description="Verify Payment Number, means by pass verify">null</Param>
+                <Param Name="sPaymentDate" TestBedPath="" Description="Verify Payment Date, means by pass verify">null</Param>
+                <Param Name="sPaymentAmount" TestBedPath="" Description="Verify Payment Amount, means by pass verify">null</Param>
+                <Param Name="sPayToName" TestBedPath="" Description="Verify Pay To Name, means by pass verify">null</Param>
+                <Param Name="sPayeeVendorID" TestBedPath="" Description="Verify Payee or VendorID, means by pass verify">null</Param>
+                <Param Name="lstFieldName" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ; - null means not check">null</Param>
+                <Param Name="lstValue1" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                <Param Name="lstValue2" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                <Param Name="lstValue3" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                <Param Name="lstValue4" TestBedPath="" Description="List of column name - number of element is as lstValue - separate with semi-colon ;, if a Value is empty, use null - null means not check">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome1" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="EOD_WEX_Credit_2" vstsID="" Status="0" Name="record the values into Customer DB" Description="" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">DB variables</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringMOCKDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='WexMockDatabase']" Description="Variable 9">comdatatest</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Clear EOD History</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\EOD\\WEX_EOD_Clear.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete payments in Bank 1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_Credit_2</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Upload payments</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payments Feature" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="UploadNewPayment" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_PendingTab" StartTime="" FinishTime="" Description="Upload new payment" Comment="no">
+                <Param Name="sCSVFile" TestBedPath="" Description="CSV file need to import">Files\\EOD\\EOD2.csv</Param>
+                <Param Name="sFileFormat" TestBedPath="" Description="Payment Data Format File">Standard</Param>
+                <Param Name="sAutomaticallyCreateBatch" TestBedPath="" Description="Check or uncheck on checkbox Automatically Create Batch on Import - check|uncheck">uncheck</Param>
+                <Param Name="sBankAccount" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_Credit_2</Param>
+                <Param Name="sExpectedWarning" TestBedPath="" Description="Expected Warning https://i.imgur.com/Xy5xoja.png - YesAndExit means Pass if have icon warning then Exit Create Payment - YesAndNotExit means Pass if have icon warning then continue test case - No means not check this icon - YesAndExit|YesAndNotExit|no">null</Param>
+                <Param Name="sExpectedError" TestBedPath="" Description="Expected Error https://i.imgur.com/Xy5xoja.png - Yes means Pass if have icon error - No mean not check this icon - Yes|No">null</Param>
+                <Param Name="sExpectedImportResult" TestBedPath="" Description="Expected import status - Success|UnSuccess">Success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Proccess Payment</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CreateNewBatchAddMultiplePayments" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Create new Batch - This keyword is an enhancement of keyword EditABatch, it allow add multiple Payments (Images\Customer\Payment\.png)" Comment="no">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_Credit_2</Param>
+                <Param Name="sBatchName" TestBedPath="" Description="Name of Batch need to create - null means default">Batch_EOD2_1</Param>
+                <Param Name="sBatchDescription" TestBedPath="" Description="Description of Batch - null means default">null</Param>
+                <Param Name="sAddPayment1" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_2_1;null</Param>
+                <Param Name="sAddPayment2" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_2_2;null</Param>
+                <Param Name="sAddPayment3" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment4" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment5" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment6" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment7" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment8" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment9" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment10" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sActionName" TestBedPath="" Description="Action after input all information -  Null means save">SaveAndProcess</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ProcessPaymentBatch" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Process Payment or Batch, must open Process Payment/Batch Popup before use this keyword, in normally, this keyword is use after keyword DoActionOnFirstBatch or SelectDoActionOnABatch  with action Name: Process Batch  or ClickProcessOnFirstPayment(Images\Customer\Payment\9.png)" Comment="no">
+                <Param Name="sOverridePaymentDate" TestBedPath="" Description="Check or Uncheck on checkbox Override Payment Date with Processing Date">uncheck</Param>
+                <Param Name="sSendPaymentEmailNotifications" TestBedPath="" Description="Check or Uncheck on checkbox Send Payment E-mail Notifications">uncheck</Param>
+                <Param Name="sIncludeRemittanceDetails" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details">uncheck</Param>
+                <Param Name="sACHEffectiveEntryDate" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details - Format MM/dd/yyyy - null means leave if by default value">null</Param>
+                <Param Name="sExpectedProcess" TestBedPath="" Description="Success or Unsuccess">Success</Param>
+                <Param Name="sDownloadFile" TestBedPath="" Description="ACH means download ACH file, POSITIVEPAY means download Positive Pay file, ACHandPOSITIVEPAY means download ACH and Positive Pay, null means by pass download file">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ContinueProcessOtherPayment(yes) - Verify one of Payment of Batch can't process, value yes means continue proccess, cancel means cancel process batch, HangOn(done) means verity the dialog HangOn and click on Button Done)">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete record on MOCKDATA</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLDeleteRecordMOCKDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">DELETE CreditInfos WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringMOCKDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLDeleteRecordMOCKDB@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">--- Insert  into CreditInfos, DB MOCK</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\EOD_WEX_Credit_InsertCreditInfos.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#CompanyNumber#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="New string need to replace string found above">617233</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\temp_EOD_WEX_Credit_InsertCreditInfos.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\Download\\temp_EOD_WEX_Credit_InsertCreditInfos.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#OutsourceID#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='OutsourceID']" Description="New string need to replace string found above">1232</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\temp_EOD_WEX_Credit_InsertCreditInfos.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringMOCKDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\Download\\temp_EOD_WEX_Credit_InsertCreditInfos.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Update customer DB to minus 1 day (for running EOD Request)</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLMinusOneDayCredit1</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">UPDATE dbo.WXVirtualCardTransactions SET CreatedDatetime = DATEADD(DAY,-1, GETDATE()) WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLMinusOneDayCredit1@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">affected)</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Run EOD Request</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">EndOfDayRequestBody</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">5</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">{\"Environment\":\"</Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Body']/Node[@Name='Environment']" Description="Variable 2">MOCK</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">\",\"SiteName\":\"</Param>
+                <Param Name="sVar4" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Body']/Node[@Name='SiteName']" Description="Variable 4">manualqc2</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">\"}</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sVar7" TestBedPath="" Description="Variable 7">null</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">null</Param>
+                <Param Name="sVar9" TestBedPath="" Description="Variable 9">null</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="sendPOSTJsonRequest" Status="" Remote="None" Product="WinApp" Feature="RESTApi" StartTime="" FinishTime="" Description="send POST with Json in Body" Comment="no">
+                <Param Name="requestURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Url']" Description="Request URI">https://acom-preua-webapp-vcardapi-wx.azurewebsites.net/api/v1/business/EndOfDay</Param>
+                <Param Name="sAuthorization" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='API']/Node[@Name='Authorization']" Description="Authorization for the request">Bearer 2345568e-e50f-4ec5-a421-edd9c0ae4153</Param>
+                <Param Name="sreqJsonBody" TestBedPath="" Description="Request body in json format. use format: name1:value1|name2:value2">@EndOfDayRequestBody@</Param>
+                <Param Name="sExpectResponseCode" TestBedPath="" Description="expected code responding">200</Param>
+                <Param Name="sExpectResponseBody" TestBedPath="" Description="expected body responding in json format">End of day successful.</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Verify data is stored in to Customer DB</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyARBilledBalance</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT ARBilledBalance FROM WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyARBilledBalance@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">1111.01</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyAccountNumber</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT AccountNumber FROM WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyAccountNumber@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='AccountNumber']" Description="List of expected string need to verify - separate with &quot;|&quot;">6172333333</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyAvailableBalance</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT AvailableBalance  FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyAvailableBalance@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">2222.02</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyUnBilledAmount</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT UnBilledAmount FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyUnBilledAmount@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">5555.05</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyBillingCurrency</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT BillingCurrency FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyBillingCurrency@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">AA</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyCreditLimit</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT CreditLimit FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyCreditLimit@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">3333.03</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyFrequency</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT Frequency FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyFrequency@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">BBB</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyInvoicingLevel</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT InvoicingLevel FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyInvoicingLevel@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">C</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyLastPaymentAmount</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT LastPaymentAmount FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyLastPaymentAmount@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">4444.04</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyLastPaymentDate</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT LastPaymentDate FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours">null</Param>
+                <Param Name="sFormat" TestBedPath="" Description="format of date">yyyy-MM-dd</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyLastPaymentDate@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">@CurrentDate@</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyPayType</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT PayType FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyPayType@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">DD</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyLastUsedDate</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT LastUsedDate FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyLastUsedDate@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">@CurrentDate@</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyResponseCode</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT ResponseCode FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyResponseCode@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">0</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyMessageNumber</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT MessageNumber FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyMessageNumber@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">0</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLVerifyMessageText</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">SELECT MessageText FROM dbo.WXEODCreditInfo WHERE CompanyNumber = </Param>
+                <Param Name="sVar2" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_Credit_2']/Node[@Name='VCardAccount2']/Node[@Name='CompanyNumber']" Description="Variable 2">617233</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">@SQLVerifyMessageText@</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">Get Credit Info was successful</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="EOD_WEX_Timeout" vstsID="" Status="0" Name="Send email to Support when timout of call EOD API" Description="No Company Number 9999 on Mock DB" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Email Content</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">EmailErrorContent</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">4</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 1">manualqc2</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|EMPTY|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_TimeOut']/Node[@Name='VCardAccount1']/Node[@Name='CompanyNumber']" Description="Variable 3">999999</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4"> 9999 1001 Exception of type \'TChek.Common.WebServices.SecurityDataAccess.SecurityException\' was thrown.</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5" />
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="" Description="Variable 7" />
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="" Description="Variable 9" />
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">DB variables</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringMOCKDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='WexMockDatabase']" Description="Variable 9">comdatatest</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete payments in Bank 1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#BankAccountName#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_TimeOut']/Node[@Name='Name']" Description="New string need to replace string found above">HO_Bank_WEX_TimeOut</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\SQLScripts\\delete_all_transaction_payments_by_bank_name_temp.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete support email</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payments Feature" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="UploadNewPayment" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_PendingTab" StartTime="" FinishTime="" Description="Upload new payment" Comment="no">
+                <Param Name="sCSVFile" TestBedPath="" Description="CSV file need to import">Files\\EOD\\EOD1.csv</Param>
+                <Param Name="sFileFormat" TestBedPath="" Description="Payment Data Format File">Standard</Param>
+                <Param Name="sAutomaticallyCreateBatch" TestBedPath="" Description="Check or uncheck on checkbox Automatically Create Batch on Import - check|uncheck">uncheck</Param>
+                <Param Name="sBankAccount" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_TimeOut']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_TimeOut</Param>
+                <Param Name="sExpectedWarning" TestBedPath="" Description="Expected Warning https://i.imgur.com/Xy5xoja.png - YesAndExit means Pass if have icon warning then Exit Create Payment - YesAndNotExit means Pass if have icon warning then continue test case - No means not check this icon - YesAndExit|YesAndNotExit|no">null</Param>
+                <Param Name="sExpectedError" TestBedPath="" Description="Expected Error https://i.imgur.com/Xy5xoja.png - Yes means Pass if have icon error - No mean not check this icon - Yes|No">null</Param>
+                <Param Name="sExpectedImportResult" TestBedPath="" Description="Expected import status - Success|UnSuccess">Success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Proccess Payment</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CreateNewBatchAddMultiplePayments" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Create new Batch - This keyword is an enhancement of keyword EditABatch, it allow add multiple Payments (Images\Customer\Payment\.png)" Comment="no">
+                <Param Name="sBankAccountName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='EndOfDay']/Node[@Name='BankAccounts']/Node[@Name='Bank_WEX_TimeOut']/Node[@Name='Name']" Description="Bank Account Name">HO_Bank_WEX_TimeOut</Param>
+                <Param Name="sBatchName" TestBedPath="" Description="Name of Batch need to create - null means default">Batch_EOD1_1</Param>
+                <Param Name="sBatchDescription" TestBedPath="" Description="Description of Batch - null means default">null</Param>
+                <Param Name="sAddPayment1" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_1_1;null</Param>
+                <Param Name="sAddPayment2" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">HO_EOD_1_2;null</Param>
+                <Param Name="sAddPayment3" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment4" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment5" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment6" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment7" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment8" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment9" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sAddPayment10" TestBedPath="" Description="Input with format [PaymentNumber;PayeeName] - Null means not do action add">null</Param>
+                <Param Name="sActionName" TestBedPath="" Description="Action after input all information -  Null means save">SaveAndProcess</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Because of time out (Company Number 999999), so process Batch error</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ProcessPaymentBatch" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_BatchesTab" StartTime="" FinishTime="" Description="Process Payment or Batch, must open Process Payment/Batch Popup before use this keyword, in normally, this keyword is use after keyword DoActionOnFirstBatch or SelectDoActionOnABatch  with action Name: Process Batch  or ClickProcessOnFirstPayment(Images\Customer\Payment\9.png)" Comment="no">
+                <Param Name="sOverridePaymentDate" TestBedPath="" Description="Check or Uncheck on checkbox Override Payment Date with Processing Date">uncheck</Param>
+                <Param Name="sSendPaymentEmailNotifications" TestBedPath="" Description="Check or Uncheck on checkbox Send Payment E-mail Notifications">uncheck</Param>
+                <Param Name="sIncludeRemittanceDetails" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details">uncheck</Param>
+                <Param Name="sACHEffectiveEntryDate" TestBedPath="" Description="Check or Uncheck on checkbox Include Remittenace Details - Format MM/dd/yyyy - null means leave if by default value">null</Param>
+                <Param Name="sExpectedProcess" TestBedPath="" Description="Success or Unsuccess">null</Param>
+                <Param Name="sDownloadFile" TestBedPath="" Description="ACH means download ACH file, POSITIVEPAY means download Positive Pay file, ACHandPOSITIVEPAY means download ACH and Positive Pay, null means by pass download file">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ContinueProcessOtherPayment(yes) - Verify one of Payment of Batch can't process, value yes means continue proccess, cancel means cancel process batch, HangOn(done) means verity the dialog HangOn and click on Button Done)">VerityTimeOutResponse(true)</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

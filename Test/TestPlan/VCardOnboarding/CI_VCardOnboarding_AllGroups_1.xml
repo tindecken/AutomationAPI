@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="Precondition_AllGroups_1" vstsID="" Status="3" Name="" Description="" Author="tuy.tran" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="1" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="13/06/2017 21:57:04" FinishTime="13/06/2017 21:57:04" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="1" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="13/06/2017 11:19:10" FinishTime="13/06/2017 11:19:10" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">CustomerName</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='CustomerName1']" Description="Variable 1">manualqc</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="Group1_TC_VCOnboard_002_2" vstsID="" Status="0" Name="Missing column" Description="Missing column" Author="ha.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="SetSQLConnectionString" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|autoqc</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group01VirtualCardOnboarding\\Group01_MissingFiles.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Logout" Comment="" />
+            <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="Group1_TC_VCOnboard_002_3" vstsID="" Status="0" Name="VCardOnboarding" Description="VCardOnboarding" Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="SetSQLConnectionString" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|autoqc</Param>
+            </Keyword>
+            <Keyword Name="ExportXMLToCSV" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="ExportXMLToCSV a file with option replace if exist" Comment="yes">
+                <Param Name="sXMLFilePath" TestBedPath="" Description="Source XML File path">TestPlan\\VCardOnboarding\\VCardOnboarding_Group01.xml</Param>
+                <Param Name="sCSVFilePath" TestBedPath="" Description="sCSVFilePath ">TestPlan\\VCardOnboarding\\Group01_VCardOnboarding.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="list of keywords you want to remove in csv">LaunchBrowser;Login;GoToVCO;CleanUp;Logout;CloseBrowser;CombineVariable;</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group01VirtualCardOnboarding\\Group01_VCardOnboarding_1.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="Group1_TC_VCOnboard_002_4" vstsID="" Status="0" Name="VCardOnboarding" Description="VCardOnboarding" Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="SetSQLConnectionString" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sSQLConnectionString" TestBedPath="" Description="sSQLConnectionString">acom-qc-env-sqlserver.database.windows.net|1433|acom@acom-qc-env-sqlserver|Ezitsol@123|autoqc</Param>
+            </Keyword>
+            <Keyword Name="ExportXMLToCSV" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="ExportXMLToCSV a file with option replace if exist" Comment="yes">
+                <Param Name="sXMLFilePath" TestBedPath="" Description="Source XML File path">TestPlan\\VCardOnboarding\\VCardOnboarding_Group01.xml</Param>
+                <Param Name="sCSVFilePath" TestBedPath="" Description="sCSVFilePath ">TestPlan\\VCardOnboarding\\Group01_VCardOnboarding.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="list of keywords you want to remove in csv">LaunchBrowser;Login;GoToVCO;CleanUp;Logout;CloseBrowser;CombineVariable;</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="RunCSV" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="RunCSV a file with option replace if exist" Comment="">
+                <Param Name="sCSVFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group01VirtualCardOnboarding\\Group01_VCardOnboarding_2.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

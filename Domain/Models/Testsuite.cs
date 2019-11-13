@@ -12,6 +12,9 @@ namespace AutomationAPI.Models
     [XmlRoot("TestSuite")]
     public class TestSuite
     {
+        public TestSuite(String tsFolder) {
+            Name = tsFolder;
+        }
         [Required]
         [StringLength(255)]
         [XmlAttribute("Name")]

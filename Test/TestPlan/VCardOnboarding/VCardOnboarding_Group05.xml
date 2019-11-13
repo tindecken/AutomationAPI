@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="New_TC_Adden_001_1a" vstsID="" Status="0" Name="ACH Enrollment Status = 'Pending ACH Information' when: Enrollment Category = 'ACH Enrolled'" Description="ACH Enrollment Status = 'Pending ACH Information' when: Enrollment Category = 'ACH Enrolled'" Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="Precondition_VCVenSpec_004_1">
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToCustomerManagement" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="GoToCustomerManagement" Comment="" />
+            <Keyword Name="VCardVendorFileImportMasterData" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Admin VCardVendorFileImportMasterData" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">xampleqc</Param>
+                <Param Name="sImportFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group07ApproveVendorsChanges\\7ApprovalVendorChanges.csv</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToCustomerManagement" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="GoToCustomerManagement" Comment="" />
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Logout" Comment="" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_VCInter_002" vstsID="" Status="0" Name="'ADD/UPDATE ACH Info.: should update the latest information base on Vendor # after [APPLY]." Description="'ADD/UPDATE ACH Info.: should update the latest information base on Vendor # after [APPLY]." Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="Precondition_VCVenSpec_004_1">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Delete_Vendor_in_MasterData_VCOnboarding.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Create_Vendor_in_MasterData_Adden.sql)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="no">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VCardImportVendorSpendFileMissingField" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Admin VCard Import VendorSpendFile Missing Field" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">autoqc acomcloud Name</Param>
+                <Param Name="sImportFile" TestBedPath="" Description="Source File path">Files\\VCardOnboarding\\Group05Othercases\\TC_VCCusFa.xlsx</Param>
+                <Param Name="sMissingColumn" TestBedPath="" Description="sMissingColumn">Total Vendors Imported:1; Total Annual Spend Imported: $287.18</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="AdminEditVendorVCardOnBoarding" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Edit Vendor from Virtual Card Onboarding config" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">autoqc acomcloud Name</Param>
+                <Param Name="sEditVendor" TestBedPath="" Description="Vendor Name or Vendor Number that will be inputed to search field">_DU_Vid-[TC-VCCusFa]</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="validate Vendor Name">null</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="validate Vendor Number">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorMetadata" TestBedPath="" Description="validate Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sContactName" TestBedPath="" Description="validate ContactName">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="validate BusinessTitle">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="validate WorkPhone">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="validate CellPhone">null</Param>
+                <Param Name="sTaxID" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sOwner" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sEnrollCategory" TestBedPath="" Description="validate Enrollment Category">ACH Enrolled</Param>
+                <Param Name="sServiceRequired" TestBedPath="" Description="validate Service Required, use short name Remittance/Pay4You or full name">null</Param>
+                <Param Name="sPrimaryVCREmail" TestBedPath="" Description="validate Primary VCard Remittance E-mail">null</Param>
+                <Param Name="sSecondaryVCREmail" TestBedPath="" Description="validate Secondary VCard Remittance E-mail">null</Param>
+                <Param Name="sNotesComments" TestBedPath="" Description="validate NotesComments">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">Apply</Param>
+            </Keyword>
+            <Keyword Name="AdminAddUpdateACHInformationVCO" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Edit Vendor from Virtual Card Onboarding config" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">autoqc acomcloud Name</Param>
+                <Param Name="sEditVendor" TestBedPath="" Description="Vendor Number that will be inputed to search field">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="select VendorName">null</Param>
+                <Param Name="sEnrollCategory" TestBedPath="" Description="select EnrollCategory">null</Param>
+                <Param Name="sRecommendedAddressIDText" TestBedPath="" Description="check RecommendedAddressIDText">null</Param>
+                <Param Name="sVendorMetadataCurrent" TestBedPath="" Description="edit Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sVendorMetadataUpdate" TestBedPath="" Description="edit Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sVendorMetadataRemit" TestBedPath="" Description="edit Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sVendorMetadataContact" TestBedPath="" Description="edit Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sBankName" TestBedPath="" Description="edit Bank Number">123456789</Param>
+                <Param Name="sAccountNumber" TestBedPath="" Description="edit Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">123456789</Param>
+                <Param Name="sRoutingNumber" TestBedPath="" Description="edit ContactName">123456789</Param>
+                <Param Name="sAccountType" TestBedPath="" Description="edit BusinessTitle">SAVINGS</Param>
+                <Param Name="sACHRemittanceContactName" TestBedPath="" Description="edit CellPhone">ACH Remittance Contact 1.1</Param>
+                <Param Name="sACHRemittancePhone" TestBedPath="" Description="edit Vendor Number">+84; 126 873 4611</Param>
+                <Param Name="sPrimaryACHRemittanceEmail" TestBedPath="" Description="edit Vendor Number">user1@ezitsol.com</Param>
+                <Param Name="sSecondaryACHRemittanceEmail" TestBedPath="" Description="edit Enrollment Category">user2@ezitsol.com;user3@ezitsol.com</Param>
+                <Param Name="sACHAuthorizationFormPath" TestBedPath="" Description="edit WorkPhone">Files\\VCardOnboarding\\Group04Addendum\\03NoticeCompanyOuting17.pdf</Param>
+                <Param Name="sOptionalVendor" TestBedPath="" Description="sOptionalVendor">Cancel</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">Cancel</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_VCInter_003_1" vstsID="" Status="0" Name="Enrollment Category = VCARD ENROLLED: virtual card icon shall display in this Vendors overview instead" Description="Enrollment Category = VCARD ENROLLED: virtual card icon shall display in this Vendors overview instead" Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="Precondition_VCVenSpec_004_1">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Delete_Vendor_in_MasterData_VCOnboarding.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Create_Vendor_in_MasterData_Adden.sql)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="no">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="AdminEditVendorVCardOnBoarding" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Edit Vendor from Virtual Card Onboarding config" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">autoqc acomcloud Name</Param>
+                <Param Name="sEditVendor" TestBedPath="" Description="Vendor Name or Vendor Number that will be inputed to search field">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="validate Vendor Name">null</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sVendorMetadata" TestBedPath="" Description="validate Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sContactName" TestBedPath="" Description="validate ContactName">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="validate BusinessTitle">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="validate WorkPhone">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="validate CellPhone">null</Param>
+                <Param Name="sTaxID" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sOwner" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sEnrollCategory" TestBedPath="" Description="validate Enrollment Category">VCard Enrolled</Param>
+                <Param Name="sServiceRequired" TestBedPath="" Description="validate Service Required, use short name Remittance/Pay4You or full name">null</Param>
+                <Param Name="sPrimaryVCREmail" TestBedPath="" Description="validate Primary VCard Remittance E-mail">null</Param>
+                <Param Name="sSecondaryVCREmail" TestBedPath="" Description="validate Secondary VCard Remittance E-mail">null</Param>
+                <Param Name="sNotesComments" TestBedPath="" Description="validate NotesComments">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">Apply</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">7</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Vendors" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Vendors Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAVendorName" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="" FinishTime="" Description="Select a Vendor Name based on/or Vendor Number and Vendor Name (Images\Customer\Vendor\1.png)" Comment="no">
+                <Param Name="sVendorName" TestBedPath="" Description="Vendor Name need to search - null means by pass search by Vendor Name">_DU_VName-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="Vendor Number need to search - null means by pass search by Vendor Number">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VCardChangeRecipients" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="" FinishTime="" Description="" Comment="">
+                <Param Name="sVendorName" TestBedPath="" Description="">_DU_VName-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="">_DU_VId-[TC-Adden-002.1b]</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC_VCInter_003_2" vstsID="" Status="0" Name="Enrollment Category = SELF ENROLLED: virtual card icon shall display in this Vendors overview instead" Description="Enrollment Category = SELF ENROLLED: virtual card icon shall display in this Vendors overview instead" Author="Dung.Truong" Comment="False" PrimaryCase="no" Dependency="Precondition_VCVenSpec_004_1">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Delete_Vendor_in_MasterData_VCOnboarding.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionString@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\VCardOnboarding\\Group04Addendum\\Create_Vendor_in_MasterData_Adden.sql)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">Page</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/operations/vcardonboarding</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="URL will be open">https://adminqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Login" StartTime="" FinishTime="" Description="Page_Login - Login to Admin Dev Page (Images\AdminDev\Login\1.png)" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVCO" Status="" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Common" StartTime="" FinishTime="" Description="Go To Page" Comment="no">
+                <Param Name="sPageURL" TestBedPath="" Description="Full Page URL need to go to">@Page@</Param>
+                <Param Name="sVerifyTitle" TestBedPath="" Description="Title Name need to check after go to page, null means by pass verify it">Administrator Site</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="AdminEditVendorVCardOnBoarding" Status="0" Remote="Chrome" Product="AdminDev" Feature="AdminDev_Operations" StartTime="" FinishTime="" Description="Edit Vendor from Virtual Card Onboarding config" Comment="">
+                <Param Name="sCustomerName" TestBedPath="" Description="Customer Name need to work with Vendor">autoqc acomcloud Name</Param>
+                <Param Name="sEditVendor" TestBedPath="" Description="Vendor Name or Vendor Number that will be inputed to search field">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorName" TestBedPath="" Description="validate Vendor Name">null</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sVendorMetadata" TestBedPath="" Description="validate Vendor Address1-2-3,city,state, zipcode. Use format: AddressLine1 = 147 VVT;City=NewYork;State = NC; ZipCode=00997;">null</Param>
+                <Param Name="sContactName" TestBedPath="" Description="validate ContactName">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="validate BusinessTitle">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="validate WorkPhone">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="validate CellPhone">null</Param>
+                <Param Name="sTaxID" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sOwner" TestBedPath="" Description="validate Vendor Number">null</Param>
+                <Param Name="sEnrollCategory" TestBedPath="" Description="validate Enrollment Category">Self Enrolled</Param>
+                <Param Name="sServiceRequired" TestBedPath="" Description="validate Service Required, use short name Remittance/Pay4You or full name">null</Param>
+                <Param Name="sPrimaryVCREmail" TestBedPath="" Description="validate Primary VCard Remittance E-mail">null</Param>
+                <Param Name="sSecondaryVCREmail" TestBedPath="" Description="validate Secondary VCard Remittance E-mail">null</Param>
+                <Param Name="sNotesComments" TestBedPath="" Description="validate NotesComments">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">Apply</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">7</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToMasterData" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Master Data Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Master Data Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="GoToVendors" Status="" Remote="Chrome" Product="Customer" Feature="Customer_MasterData" StartTime="" FinishTime="" Description="Master Data - Go To Vendors" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Vendors Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAVendorName" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="" FinishTime="" Description="Select a Vendor Name based on/or Vendor Number and Vendor Name (Images\Customer\Vendor\1.png)" Comment="no">
+                <Param Name="sVendorName" TestBedPath="" Description="Vendor Name need to search - null means by pass search by Vendor Name">_DU_VName-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="Vendor Number need to search - null means by pass search by Vendor Number">_DU_VId-[TC-Adden-002.1b]</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="VCardChangeRecipients" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Vendor" StartTime="" FinishTime="" Description="" Comment="">
+                <Param Name="sVendorName" TestBedPath="" Description="">_DU_VName-[TC-Adden-002.1b]</Param>
+                <Param Name="sVendorNumber" TestBedPath="" Description="">_DU_VId-[TC-Adden-002.1b]</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

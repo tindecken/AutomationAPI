@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="P1" vstsID="" Status="0" Name="Date1" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P1_Date_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P1_Date.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P2" vstsID="" Status="0" Name="Number1" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P2_Number_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P2_Number.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P3" vstsID="" Status="0" Name="Selection1" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P3_Selection_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P3_Selection.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P4" vstsID="" Status="0" Name="Text4 Contains" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P4_Text Contains_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P4_Text Contains.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P5" vstsID="" Status="0" Name="Text5 Ends With" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P5_Text Ends With_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P5_Text Ends With.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P6" vstsID="" Status="0" Name="Text6 equal" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P6_Text equal_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P6_Text equal.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P7" vstsID="" Status="0" Name="Text7 Not equal" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P7_Text Not equal_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P7_Text Not equal.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="P8" vstsID="" Status="0" Name="Text8 Begins With" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionString</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">xampleqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetCurrentDateTimeWithTimeZone" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get current Date Time at a specific Time Zone" Comment="no">
+                <Param Name="sDateFormat" TestBedPath="" Description="Date format need to get">yyyyMMdd</Param>
+                <Param Name="sTimeFormat" TestBedPath="" Description="Time format need to get, do not include millisecond">HHmmss</Param>
+                <Param Name="sMillisecondDigit" TestBedPath="" Description="number of millisecond to get after sNowTime, null mean don't get">3</Param>
+                <Param Name="sTimeZone" TestBedPath="" Description="Timezone to get current datetime">null</Param>
+                <Param Name="sExtend" TestBedPath="" Description="use format: timeformat,+/-,numbertoExtend">null</Param>
+                <Param Name="sSeparateSign" TestBedPath="" Description="sign to separate date and time, null mean will not separate">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="WriteToBuffer(bufferName)">WriteToBuffer(rand)</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">execSearch</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Files\\Download\\</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">_result_P8_Text Begins With_</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">@rand@</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">.csv</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CopyRenameFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Copy (and/or remane) a file with option replace if exist" Comment="no">
+                <Param Name="sSourceFile" TestBedPath="" Description="Source File path">Files\\Payment\\Search\\P8_Text Begins With.csv</Param>
+                <Param Name="sDestFile" TestBedPath="" Description="Destination File path">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="OVERWRITE(true) to copy and overwrite the existing file">OVERWRITE(true)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://xampleqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">tra.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToSearch" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Search  Function" Comment="yes">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Search Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="pageSearch_ExecuteSearchAndSort" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Execute Search Payment line by line from csv Testcase file" Comment="no">
+                <Param Name="sTCFile" TestBedPath="" Description="Testcase file path need to run update">@execSearch@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

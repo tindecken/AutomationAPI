@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="Edge" Type="Edge" Address="" Description="" />
+        <Client Name="IE" Type="Internet Explorer" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="New_TC000_Pre" vstsID="" Status="0" Name="Precondition" Description="" Author="tuy.tran" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="0" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-qc-env-sqlserver.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-qc-env-sqlserver</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='CustomerName1']" Description="Variable 9">autoqc</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sUserEmail</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='User']/Node[@Name='User7']/Node[@Name='UserName']" Description="Variable 1">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sFirtName</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">jqcgroup4</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sLastName</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">nguyen</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">sGreetingMessage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Greetings jqcgroup4 nguyen</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">UserPage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/app/users</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ResetPasswordLink</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='AdminSite']/Node[@Name='Site_url']" Description="Variable 1">https://adminqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">/#/setpassword</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="yes">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ResetPasswordLink</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">https://adminqc.acomcloud.com/#/setpassword</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">NewPassword</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">1</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Admin@12345</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">null</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">DuplicateEmailMessage</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">The Email </Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">@sUserEmail@</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3"> address has already registered.</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Replace SQL file in order to Delete user</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteUser_Customersite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@sUserEmail@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteUser_Customersite.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\DeleteUser_Customersite.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#UserEmail#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup6@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeleteUser_Customersite01.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Create new user with password: Admin@123</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateCustomerUser.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#email#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateCustomerUserTemp1.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Create new user with role</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateCustomerUserWithRole.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#email#</Param>
+                <Param Name="sNewString" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="New string need to replace string found above">jqcgroup6@atlantic-northern.com</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateCustomerUserWithRoleTemp5.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\CreateCustomerUserWithRoleTemp5.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#RoleName#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">Power User</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\SQLScripts\\CreateCustomerUserWithRoleTemp6.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+        </TestCase>
+        <TestCase ID="TC033" vstsID="" Status="0" Name="Payment Introduction" Description="" Author="thanh.huynh" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Deleted User If Exist and Create new user after that</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteUser_Customersite.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\Download\\DeleteUser_Customersite01.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\SQLScripts\\CreateCustomerUserTemp1.sql)</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="ExecuteSQLFile(SQLFilePath) means by pass all SQL Queries above and execute the sql file">ExecuteSQLFile(Files\\SQLScripts\\CreateCustomerUserWithRoleTemp6.sql)</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://autoqc.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">1. icon and content text match with background</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="User Name">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Payments page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ApprovalIntroContentStep1</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Reviewing payments\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">You can review all the payments requiring your approval, or you can review all payments that are awaiting approval, including those that need your approval.\n</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">We've also provided you with filter and sorting capabilities in case you're looking for a specific payment or set of payments.</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ApprovalIntroContentStep2</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Select the payments you want to approve\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Press the checkbox next to each of the payments you wish to approve.</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ApprovalIntroContentStep3</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Press thegavel(Approve Payments) button.\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">After pressing the approve payments button you will then be able to confirm the set of payments you've selected to be approved.</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ApprovalIntroContentStep4</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Confirm and finish.\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Press the CONFIRM button to finalize your approvals or press CANCEL to return to the previous screen to make modifications to your selections.</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">ApprovalIntroContentStep5</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">3</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Approval history and comments\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Expand a payment to view approval history by pressing in the row. You'll then be able to see pending and prior approvers along with any comments made throughout the payment's approval.\n</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">You can reach out to others for more information about a payment by making a comment which will notify any of the users you choose.</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">PendingIntroContentStep1</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Getting Started by importing payments\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Import payments from your ERP or financial system into acomcloud.com using thenote_add(Create Payments) button.\n</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">When the import process is started you will either have a custom import format to select from, or you will use our Standard acomcloud.com File Format (download a sample here).\n</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">Custom formats don't happen by accident and therefore requires a very specific file format. If you're unsure of the file format you're supposed to use, contact our technical support team so they can guide you through the process.\n</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">PendingIntroContentStep2</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">4</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">View your \"Pending\" payments\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Use this area to view, filter and sort all pending payments individually or by import file, or bank account.\n</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">This area also included pending payments that have already been assigned to a batch.\n</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">\"Pending\" refers to the status of a payment that is eligible for processing.</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">PendingIntroContentStep3</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Create batches of payments for processing\n</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">Using theplaylist_add(Create Payment Batch) button you can group together payments with the same bank account and process them to be paid.</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">URLChange</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="Variable 1">https://autoqc.acomcloud.com</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">#/app/payment/?tab=hjagfjgfahfaflakfjafjldfjklfjdal</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenDoesNotShow" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Does Not Show" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">2.finished Introduction then payments introduction is inactive</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ValidatePaymentIntroActive" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="ValidatePaymentIntroActive" Comment="no">
+                <Param Name="sIsActive" TestBedPath="" Description="Check the payment is active or not">false</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">3.Do not effect to payment introduction when change URL</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="no">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Payments page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="" Description="URL will be open">@URLChange@</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenShowSuccessfully" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Show Successfully" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="no">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="no">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">skip intro</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">4. Verify Payment Intro Is Inactive</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="no">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="no">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">InActive</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Payments page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenDoesNotShow" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Does Not Show" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">5. skip intro to finished introduction anytime in tour</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="no">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Payments page from left nav sidebar" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="no">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="no">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">skip intro</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenDoesNotShow" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Does Not Show" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">6. Validate Download File Successfully</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayments" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Payments page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payments Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="DeleteAllFileInDownLoadFolder" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Delete all files in ..\AutoTest\TestData\Files\Download Foldernal), Default(null)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional, DeleteFolder(D:\\ACH_Download\\Downloaded) mean delete this folder">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateFileDownLoadIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="">
+                <Param Name="sExpectedFileName" TestBedPath="" Description="The name of file sameple download on intro screen">Standard_File_Format.zip</Param>
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">skip intro</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">7. Can see payment introduction when user donot have permission</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Log out" Comment="" />
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToHomePage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Home page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenShowSuccessfully" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Show Successfully" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">skip intro</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Log out" Comment="" />
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='UserName']" Description="User Name">jqcgroup4@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User4']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToRoles" Status="" Remote="Chrome" Product="Customer" Feature="Customer_SiteAdministration" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Site Administration &gt; Roles page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="EditRole" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Roles" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Edit Role - Set Perminission - Transaction Types (Images\Customer\Roles\1.png)" Comment="">
+                <Param Name="sRoleName" TestBedPath="" Description="Role name need to set permissions">Power User</Param>
+                <Param Name="sNewRoleName" TestBedPath="" Description="Input new role name, null means by pass input">null</Param>
+                <Param Name="sNewDescription" TestBedPath="" Description="Input new description, null means by pass input">null</Param>
+                <Param Name="sCheckPayablesInvoices" TestBedPath="" Description="Check or uncheck Payables Invoices on tab Transaction Types, null means by pass check">null</Param>
+                <Param Name="sCheckPayment" TestBedPath="" Description="Check or uncheck Payment on tab Transaction Types, null means by pass check">check</Param>
+                <Param Name="sPermission1" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">Payments;Create Payments</Param>
+                <Param Name="sPermission2" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">Payments;Edit Payments</Param>
+                <Param Name="sPermission3" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission4" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission5" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission6" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission7" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission8" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission9" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sPermission10" TestBedPath="" Description="Each Level separate by semi-colon &quot;;&quot;, null means by pass set">null</Param>
+                <Param Name="sStatusOfSaveButton" TestBedPath="" Description="check the status of save button, null means by pass check it">Enable</Param>
+                <Param Name="sCheckToastMessage" TestBedPath="" Description="success or unsuccess or your toast message, null means by pass check it">Role Power User updated</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Log out" Comment="" />
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin@123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToUserProfile" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To User Profile page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ChangeUserInformation" Status="" Remote="Chrome" Product="Customer" Feature="Customer_AccountSettings" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Change User Information of current logged in user (Images\Customer\AccountSettings\2.png)" Comment="">
+                <Param Name="sFirstName" TestBedPath="" Description="Input First Name, null means by pass input">null</Param>
+                <Param Name="sLastName" TestBedPath="" Description="Input Last Name, null means by pass input">null</Param>
+                <Param Name="sWorkPhone" TestBedPath="" Description="Input WorkPhone, null means by pass input">null</Param>
+                <Param Name="sExt" TestBedPath="" Description="Input Extension, null means by pass input">null</Param>
+                <Param Name="sCellPhone" TestBedPath="" Description="Input Cell Phone, null means by pass input">null</Param>
+                <Param Name="sBusinessTitle" TestBedPath="" Description="Input Business Title, null means by pass input">null</Param>
+                <Param Name="sEmailFormat" TestBedPath="" Description="Select Email Format: PlainText or HTML, null means by pass it">null</Param>
+                <Param Name="sIntroPayablesInvoices" TestBedPath="" Description="Active or InActive Introductions Payables Invoices Active or InActive, null means by pass set">null</Param>
+                <Param Name="sIntroPayments" TestBedPath="" Description="Active or InActive Introductions Payment or InActive, null means by pass set">Active</Param>
+                <Param Name="sExpectedSaveButtonStatus" TestBedPath="" Description="Enable, disable or null">null</Param>
+                <Param Name="sExpectedToastMessage" TestBedPath="" Description="Toast message that you expect, null means by pass verify">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToHomePage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Go To Home page from left nav sidebar" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="Optionals">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionScreenShowSuccessfully" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Validate Introduction Screen Show Successfully" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="" />
+            </Keyword>
+            <Keyword Name="ValidateIntroductionApproveScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep2@</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep3@</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent4" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep4@</Param>
+                <Param Name="sClickBtn4" TestBedPath="" Description="Click on the button Skip Intro or Next">next</Param>
+                <Param Name="sStepContent5" TestBedPath="" Description="The content introduction on step 1">@ApprovalIntroContentStep5@</Param>
+                <Param Name="sClickBtn5" TestBedPath="" Description="Click on the button Skip Intro or Next">got it</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ValidateIntroductionPendingScreen" Status="" Remote="Chrome" Product="CustomerPayments" Feature="Payments_General" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Check the introduction Pending screen" Comment="">
+                <Param Name="sStepContent1" TestBedPath="" Description="The content introduction on step 1">@PendingIntroContentStep1@</Param>
+                <Param Name="sClickBtn1" TestBedPath="" Description="Click on the button Skip Intro or Next">skip intro</Param>
+                <Param Name="sStepContent2" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn2" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sStepContent3" TestBedPath="" Description="The content introduction on step 1">null</Param>
+                <Param Name="sClickBtn3" TestBedPath="" Description="Click on the button Skip Intro or Next">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="1/1/1990 00:00:00" FinishTime="1/1/1990 00:00:00" Description="Page_Login - Log out" Comment="" />
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">8. Clean up</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using AutomationAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using AutomationAPI.Domain.Constant;
+using System.IO;
 
 namespace AutomationAPI.Controllers
 {
@@ -16,7 +18,12 @@ namespace AutomationAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<string> lstTestSuite = new List<string>();
+            foreach(string sTestSuite in Directory.GetDirectories(ProjectConstant.sTestPlanFolder))
+            {
+                lstTestSuite.Add(sTestSuite);
+            }
+            return lstTestSuite;
         }
 
         //// GET: api/TestSuites/5

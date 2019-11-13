@@ -1,0 +1,1243 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="0" AutoCheck="yes" SourceURL="E:\HoangNguyen\automationtest\APOutSource\AutoTest\TestScriptsRepository\TestPlan\Test\Test.xml" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <Group ID="0" Status="0" Name="Payable Invoices Flow" Description="" Author="thaihoang.nguyen" Comment="False">
+            <TestCase ID="Smoke20" vstsID="" Status="0" Name="Payable Invoice Flow Smoke Test 1" Description="Check flow diagrame in this link: https://i.imgur.com/WAP9sC2.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">5</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">A Travel Company (update)</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">50000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="no">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="Smoke21" vstsID="" Status="0" Name="Flow Total Amount under 5000" Description="Flow Diagrame https://i.imgur.com/fEQLRCU.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">6</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">Aaron</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">4000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="no">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="Smoke22" vstsID="" Status="0" Name="Dismiss at status Department Manager Approval - Review by admin" Description="Check Flow Diagram at https://i.imgur.com/9Gf5pdm.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">Aaron</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">4000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Dismiss</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="Smoke23" vstsID="" Status="0" Name="Dismiss at Status Deparement Manager Approval - Review By Some" Description="Flow diagram https://i.imgur.com/OHoLuEX.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">Aaron</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">4000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Dismiss</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="Smoke24" vstsID="" Status="0" Name="Dismiss at Status Controller Approval" Description="Flow Diagram is at https://i.imgur.com/brGSVtu.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">Aaron</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">50000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Dismiss</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Returned from Controller</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User7']/Node[@Name='UserName']" Description="User Name">user7@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User7']/Node[@Name='Password']" Description="Password">User7@User7</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Controller Approval</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+            <TestCase ID="Smoke25" vstsID="" Status="0" Name="Dismiss two times at Status Controller Approval" Description="Flow Diagram is at https://i.imgur.com/Vtns5H5.png" Author="thaihoang.nguyen" Comment="False" PrimaryCase="no" Dependency="">
+                <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                    <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                    <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="no">
+                    <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                    <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                    <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                    <Param Name="sVar2" TestBedPath="" Description="Variable 2">@Random@</Param>
+                    <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                    <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                    <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                    <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                    <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc.acomsolutions.com</Param>
+                </Keyword>
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='UserName']" Description="User Name">user8@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User8']/Node[@Name='Password']" Description="Password">User8@User8</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="Click_ButtonCreateNewTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Click on button Create New Payable Invoice (in Payable Invoice Page)" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CreateNewPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Create new payable invoice" Comment="no">
+                    <Param Name="sInvoiceNumber" TestBedPath="" Description="Invoice Number">@InvoiceNumber@</Param>
+                    <Param Name="sInvoiceDesc" TestBedPath="" Description="Invoice Desc">this invoice is for testing</Param>
+                    <Param Name="sInvoiceDate" TestBedPath="" Description="Invoice Date format is 09092016">09092016</Param>
+                    <Param Name="sVendorName" TestBedPath="" Description="Vendor Name">Aaron</Param>
+                    <Param Name="sSubTotalAmount" TestBedPath="" Description="Sub Total Amount - integer type">50000</Param>
+                    <Param Name="sFreightAmount" TestBedPath="" Description="Freight Amount - Integer type">100</Param>
+                    <Param Name="sDepartment" TestBedPath="" Description="Department">Accounts Payable</Param>
+                    <Param Name="sTaxAmount" TestBedPath="" Description="Tax Amount">200</Param>
+                    <Param Name="sTermsDiscountAmount" TestBedPath="" Description="Terms Discount Amount">null</Param>
+                    <Param Name="sVendorID" TestBedPath="" Description="Vendor ID">null</Param>
+                    <Param Name="sOtherAmount" TestBedPath="" Description="Other Amount">200</Param>
+                    <Param Name="sInvoiceDueDate" TestBedPath="" Description="Invoice Due Date">09092016</Param>
+                    <Param Name="sRemitTo" TestBedPath="" Description="Remit to">null</Param>
+                    <Param Name="sDiscountAmount" TestBedPath="" Description="Discount Amount">2000</Param>
+                    <Param Name="sInvoiceFile" TestBedPath="" Description="give a path to file for uploading">Files\\PayableInvoice\\Eloquent_JavaScript.pdf</Param>
+                    <Param Name="sCreateTime" TestBedPath="" Description="Create Time - after click Finish button">15</Param>
+                    <Param Name="sCheckInvoiceNumberAlreadyUsed" TestBedPath="" Description="true - check | false: not check">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Sleep" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="yes">
+                    <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">60</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Dismiss</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Returned from Controller</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User7']/Node[@Name='UserName']" Description="User Name">user7@ezitsol.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User7']/Node[@Name='Password']" Description="Password">User7@User7</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Controller Approval</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Dismiss</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Returned from Controller</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='UserName']" Description="User Name">jqcgroup1@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User1']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Reviewed and Coded</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckAssignedToTaskValueOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it Assigned To Task value (https://i.imgur.com/Wfnenfc.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sValue" TestBedPath="" Description="Status need to check | Return for Research and Resolution">Controller Approval</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                    <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='UserName']" Description="User Name">jqcgroup6@atlantic-northern.com</Param>
+                    <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User6']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                    <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                    <Param Name="sOptional" TestBedPath="" Description="optional) - isClick = false mean check Payables Invoices Button Exist or not">null</Param>
+                </Keyword>
+                <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (https://i.imgur.com/YBJ50XW.png)" Comment="no">
+                    <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="SelectAndClickWorkButton" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Select one Payable Invoice and click on Work button (https://i.imgur.com/rWrSfrs.png), this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page" Comment="no">
+                    <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="ProcessAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_PayablesInvoices" StartTime="" FinishTime="" Description="Action on a Payable Invoice - This keyword is use after user select a transaction and click Work (keywork SelectAndClickWorkButton)" Comment="no">
+                    <Param Name="sAction" TestBedPath="" Description="Action for Process - Finish - Dismiss">Finish</Param>
+                    <Param Name="sTimeExecute" TestBedPath="" Description="">null</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="FilterSearchPage" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Filter transaction - Will click on search button and set filter set (https://i.imgur.com/wMyOr41.png)" Comment="">
+                    <Param Name="sTransactionType" TestBedPath="" Description="Select Transaction Type | Payables Invoices | Payments | Any">Payables Invoices</Param>
+                    <Param Name="sFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                    <Param Name="sOperator" TestBedPath="" Description="Operator =|Range|...">=</Param>
+                    <Param Name="sValue" TestBedPath="" Description="Default Value Input - Date time with format MMddyyyy">@InvoiceNumber@</Param>
+                    <Param Name="sValue2" TestBedPath="" Description="Second Value use in case of sOperator is RANGE - Date time with format MMddyyyy">null</Param>
+                    <Param Name="sTimeToSearch" TestBedPath="" Description="Time after click Search button - in case search action take a lot of time">5</Param>
+                    <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of result | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search">1</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CheckStatusOfAPayableInvoice" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Search" StartTime="" FinishTime="" Description="Select one Payable Invoice in the search page and check it status (https://i.imgur.com/B07ytDD.png), this keyword is used after keyword FilterSearchPage to make sure just have one transaction in Result" Comment="no">
+                    <Param Name="sStatus" TestBedPath="" Description="Status need to check | Exporting">Exporting</Param>
+                    <Param Name="sExpected" TestBedPath="" Description="true|false">true</Param>
+                    <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+                </Keyword>
+                <Keyword Name="CleanUp" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+                <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Log out" Comment="no" />
+                <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+            </TestCase>
+        </Group>
+    </Tests>
+</TestSuite>

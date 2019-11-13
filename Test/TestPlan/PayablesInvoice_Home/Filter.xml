@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TestSuite vstsID="" Status="3" AutoCheck="yes" SourceURL="" Description="" Author="">
+    <Clients ID="">
+        <Client Name="Chrome" Type="Chrome" Address="" Description="" />
+        <Client Name="None" Type="None" Address="" Description="" />
+    </Clients>
+    <Tests ID="">
+        <TestCase ID="Precondition" vstsID="" Status="0" Name="CombineVariables" Description="" Author="tuy.tran" Comment="False" PrimaryCase="yes" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringAdminDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='AdminDatabase']" Description="Variable 9">admin</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="NewCombineVariable" Status="0" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="01/01/1999 00:00:00" FinishTime="01/01/1999 00:00:00" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionStringCustomerDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Random" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Generate a random string or number and store it into buffer.xml" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key in buffer file will store value">Random</Param>
+                <Param Name="sType" TestBedPath="" Description="integer|string|null - combine string and integer">integer</Param>
+                <Param Name="sLength" TestBedPath="" Description="Number of chars will be generated">5</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Combine multiple parameter and store result into one buffer variable" Comment="">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">InvoiceNumber</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine">2</Param>
+                <Param Name="sVar1" TestBedPath="" Description="Variable 1">Test</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">TU_Invoices_1</Param>
+                <Param Name="sVar3" TestBedPath="" Description="Variable 3">null</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">null</Param>
+                <Param Name="sVar5" TestBedPath="" Description="Variable 5">null</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="FirstTC" vstsID="" Status="0" Name="Create New Transaction" Description="" Author="" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="NewCombineVariable" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="New Combine multiple parameter and store result into one buffer variable, NewCombineVariable is only different number of parameter with the old one" Comment="no">
+                <Param Name="sKey" TestBedPath="" Description="Key name will store in buffer file">SQLConnectionCustomDB</Param>
+                <Param Name="sNumber" TestBedPath="" Description="Number of Variables need to combine, range input: 2 --&gt; 17">9</Param>
+                <Param Name="sVar1" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Host']" Description="Variable 1">acom-preua-sqlserver01.database.windows.net</Param>
+                <Param Name="sVar2" TestBedPath="" Description="Variable 2">|</Param>
+                <Param Name="sVar3" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Port']" Description="Variable 3">1433</Param>
+                <Param Name="sVar4" TestBedPath="" Description="Variable 4">|</Param>
+                <Param Name="sVar5" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='User']" Description="Variable 5">acom@acom-preua-sqlserver01</Param>
+                <Param Name="sVar6" TestBedPath="" Description="Variable 6">|</Param>
+                <Param Name="sVar7" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='Password']" Description="Variable 7">Ezitsol@123</Param>
+                <Param Name="sVar8" TestBedPath="" Description="Variable 8">|</Param>
+                <Param Name="sVar9" TestBedPath="/Node[@Name='TestBed']/Node[@Name='SQLServer']/Node[@Name='DatabaseName']" Description="Variable 9">manualqc2</Param>
+                <Param Name="sVar10" TestBedPath="" Description="Variable 10">null</Param>
+                <Param Name="sVar11" TestBedPath="" Description="Variable 11">null</Param>
+                <Param Name="sVar12" TestBedPath="" Description="Variable 12">null</Param>
+                <Param Name="sVar13" TestBedPath="" Description="Variable 13">null</Param>
+                <Param Name="sVar14" TestBedPath="" Description="Variable 14">null</Param>
+                <Param Name="sVar15" TestBedPath="" Description="Variable 15">null</Param>
+                <Param Name="sVar16" TestBedPath="" Description="Variable 16">null</Param>
+                <Param Name="sVar17" TestBedPath="" Description="Variable 17">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Delete the existing Invoice HO_Invoice_Immediately_1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ReplaceStringInFile" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Replace String By String in a file (Images\Utils\1.png)" Comment="no">
+                <Param Name="sSourceFilePath" TestBedPath="" Description="Source File name need to replace string by string , LastFile() means newest File in folder AutoTest\TestData\Files\Download">Files\\SQLScripts\\Payables\\DeletePayablesInvoices.sql</Param>
+                <Param Name="sStringNeedToReplace" TestBedPath="" Description="String need to find and replace in file">#InvoiceNumber#</Param>
+                <Param Name="sNewString" TestBedPath="" Description="New string need to replace string found above">@InvoiceNumber@</Param>
+                <Param Name="sDestinationFilePath" TestBedPath="" Description="KW will Save As new file after replace, give your out file">Files\\Download\\DeletePayablesInvoices.sql</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ExecuteSQLQueries" Status="" Remote="None" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="use sqlcmd to connect database on sql server, then execute multiple sql queries and check response" Comment="no">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionCustomDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="List of sql queries1 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="List of sql queries2 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="List of sql queries3 need to execute - separate each with &quot;|&quot;">null</Param>
+                <Param Name="sExpectedResults" TestBedPath="" Description="List of expected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sUnExpectedResults" TestBedPath="" Description="List of unexpected string need to verify - separate with &quot;|&quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="String Optional - use in case we need more parameters">ExecuteSQLFile(Files\\Download\\DeletePayablesInvoices.sql)</Param>
+            </Keyword>
+            <Keyword Name="Comment" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="no">
+                <Param Name="sComment" TestBedPath="" Description="comment">Import Invoice</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="ActivateBrowser" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Activate or Bring Browser to Front of current Webdriver" Comment="no">
+                <Param Name="sWindowHandle" TestBedPath="" Description="WindowsHandle of browser need to Activate">@Chrome@</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description=" Description(URL will be open)">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Login to AP outsource webpagee" Comment="no">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='UserName']" Description="User Name">thaihoang.nguyen@acomsolutions.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='Admin']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="PayableGoToInbox" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Payables Invoice - Go to Inbox from Payables Page by clicking on Button Create Inbox" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="DeleteAllMyInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Delete All My Invoice (Images\Customer\PayablesInvoices\DeleteAllMyInvoice.png)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="GetPreviousCurrentNextDate" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="Get Previous, Current, Next Date and write it in buffer file with key: PreviousDate, CurrentDate, NextDate (Images\Common\3.png)" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="CurrentDateMinusHours(12) --&gt; get current date time, then minus with 5 hours, store in buffer with key: CurrentDateMinusHours, CurrentDatePlusHours(12) --&gt; get current date time, then plus with 5 hours, store in buffer with key: CurrentDatePlusHours">null</Param>
+                <Param Name="sFormat" TestBedPath="" Description="format of date">M/d/yyyy</Param>
+            </Keyword>
+            <Keyword Name="PayableUploadInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Upload new invoice and verify after upload, only on tab My Uploads (Images\Customer\PayablesInvoices\UploadInvoice.png)" Comment="no">
+                <Param Name="sFileName" TestBedPath="" Description="Path to file name need to upload">Files\\Payables\\EmailNotification\\1.pdf</Param>
+                <Param Name="sExpectedResult" TestBedPath="" Description="Verify upload success or not">success</Param>
+                <Param Name="sVerifyFileName" TestBedPath="" Description="Verify file name after upload">yes</Param>
+                <Param Name="sVerifyFileSize" TestBedPath="" Description="Verify file size after upload">null</Param>
+                <Param Name="sVerifyUploadDate" TestBedPath="" Description="Verify file upload date after upload, verify contains">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="SelectInvoice" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Select Invoice In Tab My Uploads or All Uploads (Images\Customer\PayablesInvoices\SelectInvoice.png)" Comment="no">
+                <Param Name="sTabName" TestBedPath="" Description="Tab need to Select Invoice - My Uploads or All Uploads, null means My Uploads">My Uploads</Param>
+                <Param Name="sSearchString" TestBedPath="" Description="Input String for Search Invoice, can't be null">1.pdf</Param>
+                <Param Name="sVerifyNumberOfResult" TestBedPath="" Description="Number of result after search">1</Param>
+                <Param Name="sSelectOrder" TestBedPath="" Description="Other of Invoice need to select, null means select first Invoice">1</Param>
+                <Param Name="sVerifySelectResult" TestBedPath="" Description="Verify select success or not, in case of Invoice is already used by other user">success</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="InputAndImportInvoiceData" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Inbox" StartTime="" FinishTime="" Description="Payables Invoices - Input Invoice Data then Import it (Images\Customer\PayablesInvoices\InputAndImportInvoiceData.png)" Comment="no">
+                <Param Name="sField1" TestBedPath="" Description="Format must have 6 parameters: FieldName;CheckExist;CheckRequired;CheckReadOnly;Value;ErrorMessage - CheckExist = exist or NotExist, CheckRequired = Required or NotRequired, CheckReadOnly = ReadOnly or NotReadOnly, Value = null means by pass input, ErrorMessage = ErrorMessage if any or NotError, null means by pass verify">Invoice Number;exist;Required;NotReadOnly;TU_Invoices_1;NoError</Param>
+                <Param Name="sField2" TestBedPath="" Description="">Invoice Date;exist;Required;NotReadyOnly;07/26/2018;Noerror</Param>
+                <Param Name="sField3" TestBedPath="" Description="">Sub-Total Amount;Exist;NotRequired;NotReadOnly;500;NoError</Param>
+                <Param Name="sField4" TestBedPath="" Description="">Vendor Name;Exist;Required;NotReadOnly;TU_Vendor_Payables_Name;NoError</Param>
+                <Param Name="sField5" TestBedPath="" Description="">Department;exist;NotRequired;NotReadOnly;Professional Services;NoError</Param>
+                <Param Name="sField6" TestBedPath="" Description="">null</Param>
+                <Param Name="sField7" TestBedPath="" Description="">null</Param>
+                <Param Name="sField8" TestBedPath="" Description="">null</Param>
+                <Param Name="sField9" TestBedPath="" Description="">null</Param>
+                <Param Name="sField10" TestBedPath="" Description="">null</Param>
+                <Param Name="sField11" TestBedPath="" Description="">null</Param>
+                <Param Name="sField12" TestBedPath="" Description="">null</Param>
+                <Param Name="sField13" TestBedPath="" Description="">null</Param>
+                <Param Name="sVerifyTotalAmount" TestBedPath="" Description="Total Amount need to verify">500.00</Param>
+                <Param Name="sVerifyError" TestBedPath="" Description="Verify Error after input all field about">null</Param>
+                <Param Name="sClickImport" TestBedPath="" Description="Click on Import button">click</Param>
+                <Param Name="sVerifyToastMessage" TestBedPath="" Description="Toast Message need to verify after click on Import button">Invoice import successfully</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="Sleep" Status="" Remote="None" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Sleep" Comment="no">
+                <Param Name="sTime" TestBedPath="" Description="Time to sleep - in second">10</Param>
+                <Param Name="sOptional" TestBedPath="" Description="Optional">null</Param>
+            </Keyword>
+            <Keyword Name="CleanUp" Status="" Remote="None" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no">
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Appium" Feature="Appium_Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC00000_TC1" vstsID="" Status="0" Name="Filter one" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Start the Test</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select an Category" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to select">All Tasks</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (Images\Customer\PayablesInvoices\6.png)" Comment="">
+                <Param Name="sIsListView" TestBedPath="" Description="Default is Relax Viewed, If you want to change to List View then set sIsListView to true, otherwise null or false ">false</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC00000_TC2" vstsID="" Status="0" Name="Filter one and open" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Start the Test</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select an Category" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to select">All Tasks</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (Images\Customer\PayablesInvoices\6.png)" Comment="no">
+                <Param Name="sIsListView" TestBedPath="" Description="Default is Relax Viewed, If you want to change to List View then set sIsListView to true, otherwise null or false ">false</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue" TestBedPath="" Description="Value Input">@InvoiceNumber@</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickOpenTaskButton" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select one or Multiple Payable Invoice and click on Work button, this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page, in case select one Invoices them it'll open the first one results (Images\Customer\PayablesInvoices\7.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="The name of Category you want to click on">null</Param>
+                <Param Name="sIsSelectAllTransactions" TestBedPath="" Description="If you want to select all transactions on Category then set it True, otherwise is False">null</Param>
+                <Param Name="sIsSelectAllTransactionsGroup" TestBedPath="" Description="If you want to select all transactions on the same Group then set it True, otherwise is False">null</Param>
+                <Param Name="sTransactionsGroupName" TestBedPath="" Description="If sIsSelectAllTransactionsGroup = [True] then you need declare sTransactionsGroupName, otherwise is False">null</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC00000_TC3" vstsID="" Status="0" Name="Select open all task" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Start the Test</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select an Category" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to select">All Tasks</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (Images\Customer\PayablesInvoices\6.png)" Comment="yes">
+                <Param Name="sIsListView" TestBedPath="" Description="Default is Relax Viewed, If you want to change to List View then set sIsListView to true, otherwise null or false ">false</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue" TestBedPath="" Description="Value Input">NN_260909</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickOpenTaskButton" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select one or Multiple Payable Invoice and click on Work button, this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page, in case select one Invoices them it'll open the first one results (Images\Customer\PayablesInvoices\7.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="The name of Category you want to click on">All Tasks</Param>
+                <Param Name="sIsSelectAllTransactions" TestBedPath="" Description="If you want to select all transactions on Category then set it True, otherwise is False">true</Param>
+                <Param Name="sIsSelectAllTransactionsGroup" TestBedPath="" Description="If you want to select all transactions on the same Group then set it True, otherwise is False">null</Param>
+                <Param Name="sTransactionsGroupName" TestBedPath="" Description="If sIsSelectAllTransactionsGroup = [True] then you need declare sTransactionsGroupName, otherwise is False">null</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC00000_TC4" vstsID="" Status="0" Name="Select open all task in group" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Start the Test</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select an Category" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to select">All Tasks</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (Images\Customer\PayablesInvoices\6.png)" Comment="yes">
+                <Param Name="sIsListView" TestBedPath="" Description="Default is Relax Viewed, If you want to change to List View then set sIsListView to true, otherwise null or false ">false</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue" TestBedPath="" Description="Value Input">NN_260909</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickOpenTaskButton" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select one or Multiple Payable Invoice and click on Work button, this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page, in case select one Invoices them it'll open the first one results (Images\Customer\PayablesInvoices\7.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="The name of Category you want to click on">null</Param>
+                <Param Name="sIsSelectAllTransactions" TestBedPath="" Description="If you want to select all transactions on Category then set it True, otherwise is False">null</Param>
+                <Param Name="sIsSelectAllTransactionsGroup" TestBedPath="" Description="If you want to select all transactions on the same Group then set it True, otherwise is False">true</Param>
+                <Param Name="sTransactionsGroupName" TestBedPath="" Description="If sIsSelectAllTransactionsGroup = [True] then you need declare sTransactionsGroupName, otherwise is False">Department Manager Approval</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+        <TestCase ID="TC00000_TC5" vstsID="" Status="0" Name="Open Bottom Sheet and Validate" Description="" Author="tuy.tran" Comment="False" PrimaryCase="no" Dependency="">
+            <Keyword Name="Comment" Status="" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark a comment for test step" Comment="">
+                <Param Name="sComment" TestBedPath="" Description="comment">Start the Test</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="QueryDBAndStoreResultToFile" Status="" Remote="Chrome" Product="WinApp" Feature="SQLServer" StartTime="" FinishTime="" Description="Query DB then store the table results to a file" Comment="yes">
+                <Param Name="sConnectString" TestBedPath="" Description="provide 5 params: hostname - port - user - pass - database name need to connect - separate each with &quot;|&quot;">@SQLConnectionStringCustomerDB@</Param>
+                <Param Name="sSQLqueries1" TestBedPath="" Description="String query1 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries2" TestBedPath="" Description="String query2 to combine before executing query">null</Param>
+                <Param Name="sSQLqueries3" TestBedPath="" Description="String query3 to combine before executing query">null</Param>
+                <Param Name="sSQLQueryFile" TestBedPath="" Description="Execute query from file">Files\\VCardOnboarding\\Group08AutoEnrollment\\00CreateVendorMasterData.sql</Param>
+                <Param Name="sOutputResult2File" TestBedPath="" Description="Solving the query result then store to a text file, split each of rows to a line, separate each of columns by &quot; || &quot;">null</Param>
+                <Param Name="sOptional" TestBedPath="" Description="sOptional">null</Param>
+            </Keyword>
+            <Keyword Name="LaunchBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Launch browser to URL" Comment="no">
+                <Param Name="sURL" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='Site_url']" Description="URL will be open">https://manualqc2.acomcloud.com</Param>
+            </Keyword>
+            <Keyword Name="Login" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Login to AP outsource web page" Comment="">
+                <Param Name="sUserName" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='UserName']" Description="User Name">jqcgroup2@atlantic-northern.com</Param>
+                <Param Name="sPassword" TestBedPath="/Node[@Name='TestBed']/Node[@Name='CustomerSite']/Node[@Name='User']/Node[@Name='User2']/Node[@Name='Password']" Description="Password">Admin123</Param>
+                <Param Name="sIsClick" TestBedPath="" Description="Click Sign In">true</Param>
+                <Param Name="sOptional" TestBedPath="" Description="If you want to click on Forgot Password, then put FORGOTPASS(true)">null</Param>
+            </Keyword>
+            <Keyword Name="GoToPayablesInvoices" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Home" StartTime="" FinishTime="" Description="Page Home - Go To Payables Invoices Feature" Comment="">
+                <Param Name="sOptional" TestBedPath="" Description="isClick(false) mean check Payables Invoices Button Exist or not">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndClickCategory" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select an Category" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="Name of Category want to select">All Tasks</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="Time after click Work button - For page load">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="FilterTransaction" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Filter transaction - Will click on filter button and set filter set (Images\Customer\PayablesInvoices\6.png)" Comment="yes">
+                <Param Name="sIsListView" TestBedPath="" Description="Default is Relax Viewed, If you want to change to List View then set sIsListView to true, otherwise null or false ">false</Param>
+                <Param Name="SFieldName" TestBedPath="" Description="Field name need to filter">Invoice Number</Param>
+                <Param Name="sOperator" TestBedPath="" Description="Operator Equal, ">Equal</Param>
+                <Param Name="sValue" TestBedPath="" Description="Value Input">NN_260909</Param>
+                <Param Name="sExpectedResultCount" TestBedPath="" Description="Number of transaction | 0: not found | 1: found 1 result | null: not check - by pass this parameter - use in case add multiple search - cannot input this parameter &gt; 100">1</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="SelectAndValidateInvoiceBottomSheet" Status="" Remote="Chrome" Product="CustomerPayablesInvoices" Feature="PayablesInvoices_Home" StartTime="" FinishTime="" Description="Select and open Invoice Bottom, this keyword is used after keyword FilterTransaction to make sure just have one transaction in Payable Invoice Page(Images\Customer\PayablesInvoices\7.png)" Comment="">
+                <Param Name="sCategoryName" TestBedPath="" Description="The name of Category you want to click on, null mean bypass, you need to run FilterTransaction to bypass">All Tasks</Param>
+                <Param Name="sVendorNameOrInvoiceNumber" TestBedPath="" Description="VendorName or InvoiceNumber, If sVendorNameOrInvoiceNumber is null then will open bottom sheet for first transactions">NN_260909</Param>
+                <Param Name="sBottomViewHomeMetaData" TestBedPath="" Description="Correct value need to check, separate by [;], null mean bypass sInvoiceNumber;sInvoiceDate;sSubTotalAmount;sFreightAmount;sOtherAmount;sDiscountAmount;sTermsDiscountAmount;sTaxAmount;sTotalAmount">null</Param>
+                <Param Name="sDataTabMetaData" TestBedPath="" Description="Correct value need to check, separate by [;], null mean bypass sDepartment;sInvoiceDescription;sUdf1;sUdf2;sUdf3;sUdf4;sUdf5">null</Param>
+                <Param Name="sGLCodingTabbMetaData" TestBedPath="" Description="No need to input here, if you want to validate GL Coding Tab then set this field is [True] otherwise is null, null mean bypass ">true</Param>
+                <Param Name="sPropertiesTabMetaData" TestBedPath="" Description="Correct value need to check, separate by [;], null mean bypass sTransactionType;sTransactionID;sTransactionStatus;sDateReceived;sReceivedFrom;sDateImported;sImportedBy;sLastModified;sLastModifiedBy;sExportedOn;sAssignedToTask;sTaskStatus;sTaskDescription">null</Param>
+                <Param Name="sHistoryTabMetaData" TestBedPath="" Description="Correct value need to check, separate by [;], null mean bypass ">null</Param>
+                <Param Name="sTimeExecute" TestBedPath="" Description="">4</Param>
+                <Param Name="sOptional" TestBedPath="" Description="optional">null</Param>
+            </Keyword>
+            <Keyword Name="Logout" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Login" StartTime="" FinishTime="" Description="Page_Login - Log out" Comment="no" />
+            <Keyword Name="CleanUp" Status="0" Remote="Chrome" Product="Utils" Feature="Utils" StartTime="" FinishTime="" Description="This kw use to mark start cleanup" Comment="no" />
+            <Keyword Name="CloseBrowser" Status="" Remote="Chrome" Product="Customer" Feature="Customer_Common" StartTime="" FinishTime="" Description="Close browser" Comment="no" />
+        </TestCase>
+    </Tests>
+</TestSuite>
