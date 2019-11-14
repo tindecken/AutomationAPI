@@ -13,7 +13,7 @@ namespace AutomationAPI.Mapping
     {
         public ModelToResourceProfile()
         {
-            CreateMap<Category, CategoryResource>();
+            CreateMap<Category, CategoryResource>().ForMember(dest => dest.TestSuiteResources, opts => opts.MapFrom(source => source.TestSuites));
             CreateMap<TestSuite, TestSuiteResource>();
         }
     }

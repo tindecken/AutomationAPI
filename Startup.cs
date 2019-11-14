@@ -47,6 +47,7 @@ namespace AutomationAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseExceptionHandler("/error/");
             app.UseHttpsRedirection();
 
             app.UseRouting();

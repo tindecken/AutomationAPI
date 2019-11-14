@@ -16,13 +16,12 @@ namespace AutomationAPI.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
+        private readonly IMapper _mapper;
         public CategoriesController(IMapper mapper)
         {
             _mapper = mapper;
         }
-
-
-        private readonly IMapper _mapper;
+        
         // GET: api/Categories
         [HttpGet]
         public IEnumerable<CategoryResource> Get()
@@ -30,7 +29,6 @@ namespace AutomationAPI.Controllers
             List<Category> lstCategories = new List<Category>();
             foreach (string cat in Directory.GetDirectories(ProjectConstant.sTestPlanFolder))
             {
-                //var catFolder = new DirectoryInfo(cat).Name;
                 Category tempCat = new Category(cat);
                 lstCategories.Add(tempCat);
             }
